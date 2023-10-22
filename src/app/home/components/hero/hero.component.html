@@ -1,0 +1,28 @@
+<section id="hero" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'" class="wow fadeIn">
+    <video autoplay muted playsinline loop oncanplay="this.play()" onloadedmetadata="this.muted = true" [src]="sliders[0]?.video" type="video/mp4" class="w-100"></video>
+    <div class="container">
+        <div class="hero-text d-flex align-items-center justify-content-between">
+            <div class="wow fadeIn">
+                <h1 class="fw-bolder text-white col-md-9 wow fadeInDown">{{ lang == 'en' ? sliders[0]?.title?.en : sliders[0]?.title?.ar }}</h1>
+                <a class="btn-primary btn-with-arrow mt-5 wow fadeInDown" [href]="sliders[0]?.link">
+                    <span>{{'HERO.BUTTON' | translate}}</span>
+                    <img src="./assets/images/icons/btn-arrow.svg" alt="arrow" class="m{{lang === 'en' ? 's' : 'e'}}-2">
+                </a>
+            </div>
+            <div class="social-links d-flex align-items-center flex-column mt-4 ms-5">
+                <a class="mb-3" [href]="settings.facebook" target="_blank">
+                    <img src="./assets/images/icons/facebook.svg" alt="facebook" class="facebook wow fadeIn">
+                </a>
+                <a class="mb-3" [href]="settings.twitter" target="_blank">
+                    <img src="./assets/images/icons/twitter.svg" alt="twitter" class="wow fadeIn">
+                </a>
+                <a class="mb-3" [href]="settings.youtube" target="_blank">
+                    <img src="./assets/images/icons/youtube.svg" alt="youtube" class="wow fadeIn">
+                </a>
+                <a class="mb-3" [href]="settings.instagram" target="_blank">
+                    <img src="./assets/images/icons/instagram.svg" alt="instagram" class="wow fadeIn">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

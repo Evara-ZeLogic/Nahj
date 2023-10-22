@@ -1,0 +1,116 @@
+#contact {
+    padding: 80px 0;
+    .main {
+        h2 {
+            line-height: 60px;
+        }
+        p {
+            margin-top: 24px;
+            color: #878787;
+        }
+    }
+    .work-together {
+        padding-top: 72px;
+        p {
+            margin-top: 16px;
+            color: #878787;
+        }
+        ul {
+            margin-top: 68px;
+            margin-bottom: 64px;
+            li {
+                margin-bottom: 40px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                span {
+                    color: #878787;
+                }
+                img {
+                    margin-right: 24.05px;
+                }
+            }
+        }
+        .connect {
+            h5 {
+                margin-bottom: 24px;
+            }
+            .social-links {
+                a {
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 80px;
+                    margin: 0 8px;
+                    padding: 10px;
+                    transition: 0.5s all ease-in-out;
+                    border: 1px solid #a2aaad;
+                    color: #a2aaad;
+                    &:hover {
+                        background: $primary;
+                        border: 1px solid $primary;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .card {
+            padding: 32px;
+            background: #ffffff;
+            border: 0;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
+            border-radius: 4p;
+            form {
+                .form-group {
+                    margin-bottom: 16px;
+                    input {
+                        border: 1px solid #e8e8e8;
+                        border-radius: 4px;
+                        padding: 16px;
+                        margin-top: 8px;
+                    }
+                    textarea {
+                        padding: 16px;
+                        border: 1px solid #e8e8e8;
+                        border-radius: 4px;
+                        height: 136px;
+                    }
+                }
+                button {
+                    margin-top: 24px;
+                }
+            }
+        }
+    }
+}
+
+::placeholder {
+    color: #878787;
+}
+
+#contact[lang="ar"] {
+    font-family: "Cairo";
+    .work-together {
+        ul {
+            li {
+                img {
+                    margin-left: 24.05px;
+                }
+            }
+        }
+    }
+}
+
+button:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+    span {
+        color: #fff;
+    }
+}
+
+.toast-container {
+    font-family: 'Cairo';
+}

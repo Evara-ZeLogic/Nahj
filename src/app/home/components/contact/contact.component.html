@@ -1,0 +1,85 @@
+<section id="contact" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'" class="wow fadeIn">
+    <div class="container">
+        <div class="main">
+            <h2 class="fw-bolder text-center wow fadeIn">{{'CONTACT.START_PROJECT' | translate}}
+            </h2>
+            <p class="col-md-4 text-center mx-auto wow fadeIn">{{'CONTACT.PROJECT_BODY' | translate}}</p>
+        </div>
+        <div class="row work-together mx-0 w-100">
+            <div class="col-md-6 wow fadeInRight">
+                <h3 class="text-primary fw-bolder wow fadeIn">{{'CONTACT.WORK_TOGETHER_TITLE' | translate}}</h3>
+                <p class="col-md-8 wow fadeIn">{{'CONTACT.WORK_TOGETHER_BODY' | translate}}</p>
+                <ul class="contact-us list-unstyled px-0">
+                    <li class="d-flex align-items-center wow fadeIn">
+                        <img src="./assets/images/icons/phone-light.svg" alt="">
+                        <span class="">{{settings.phone}}
+                        </span>
+                    </li>
+                    <li class="d-flex align-items-center wow fadeIn">
+                        <img src="./assets/images/icons/email-light.svg" alt="">
+                        <span class="">{{settings.email}}
+                        </span>
+                    </li>
+                    <li class="d-flex align-items-center wow fadeIn">
+                        <img src="./assets/images/icons/location-light.svg" alt="">
+                        <span class="">{{settings.address}}
+                        </span>
+                    </li>
+                </ul>
+                <div class="connect wow fadeIn">
+                    <h5 class="fw-bold">{{'FOOTER.CONNECT_WITH_US' | translate}}</h5>
+                    <div class="social-links d-flex align-items-center">
+                        <a *ngIf="settings.instagram" [href]="settings.instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a *ngIf="settings.twitter" class="" [href]="settings.twitter" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a *ngIf="settings.facebook" [href]="settings.facebook" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a *ngIf="settings.linkedIn" [href]="settings.linkedIn" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a *ngIf="settings.youtube" [href]="settings.youtube" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 mt-lg-0 mt-5 wow fadeInLeft">
+                <div class="card">
+                    <form action="" #form [formGroup]="contactForm" (ngSubmit)="sendEmail()">
+                        <div class="form-group d-flex flex-column wow fadeIn">
+                            <label for="name">{{'CONTACT.FORM.NAME' | translate}}</label>
+                            <input type="text" name="name" required formControlName="name" placeholder="{{'CONTACT.FORM.NAME_PLACEHOLDER' | translate}}">
+                        </div>
+                        <div class="form-group d-flex flex-column wow fadeIn">
+                            <label for="subject">{{'CONTACT.FORM.SUBJECT' | translate}}</label>
+                            <input type="text" name="subject" required formControlName="subject" placeholder="{{'CONTACT.FORM.SUBJECT_PLACEHOLDER' | translate}}">
+                        </div>
+                        <div class="form-group d-flex flex-column wow fadeIn">
+                            <label for="name">{{'CONTACT.FORM.EMAIL' | translate}}</label>
+                            <input type="text" name="email" formControlName="email" placeholder="{{'CONTACT.FORM.EMAIL_PLACEHOLDER' | translate}}">
+                        </div>
+                        <div class="form-group d-flex flex-column wow fadeIn">
+                            <label for="name">{{'CONTACT.FORM.PHONE' | translate}}</label>
+                            <input type="text" name="phone" formControlName="phone" placeholder="{{'CONTACT.FORM.PHONE_PLACEHOLDER' | translate}}">
+                        </div>
+                        <div class="form-group d-flex flex-column wow fadeIn">
+                            <label for="name">{{'CONTACT.FORM.DETAILS' | translate}}</label>
+                            <textarea name="message" formControlName="message" placeholder="{{'CONTACT.FORM.DETAILS' | translate}}" id=""></textarea>
+                        </div>
+                        <button [disabled]="contactForm.invalid" class="btn-primary btn-with-arrow wow fadeIn">
+                            <span>{{'CONTACT.FORM.SUBMIT' | translate}}</span>
+                            <img src="./assets/images/icons/btn-arrow.svg" alt="arrow"
+                                class="m{{lang === 'en' ? 's' : 'e'}}-3">
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

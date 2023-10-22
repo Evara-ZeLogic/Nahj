@@ -1,0 +1,20 @@
+<div class="services-wrapper-communication" *ngFor="let service of services">
+    <section [id]="service.slug" class="wow fadeIn">
+        <div class="container">
+            <div class="row mx-auto w-100">
+                <div class="col-md-6 wow fadeInLeft">
+                    <div class="service-info">
+                        <!-- <img [src]="service.image?.path" [alt]="service.image?.alt"> -->
+                        <h3>{{ lang == 'ar' ? service.title?.ar : service.title?.en }} </h3>
+                        <p class="col-md-9" [innerHtml]=" lang == 'ar' ? service.description?.ar.slice(0,400) : service.description?.ar.slice(0,400) "></p>
+                        <button class="btn mt-3" [routerLink]="'/services/details/' + service.slug">{{'HERO.BUTTON' | translate}}</button>
+                    </div>
+                </div>
+                <div class="col-md-6 wow fadeInRight">
+                    <img [src]="service.image?.path" [alt]="service.image?.alt">
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>

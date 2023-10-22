@@ -1,0 +1,29 @@
+<app-header (getCurrentLang)="selectLang($event)"></app-header>
+
+<section id="who-we-are" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'" class="wow fadeIn">
+    <div class="container">
+        <div class="row w-100 mx-0">
+            <div class="col-md-5 me-lg-5 me-0">
+                <h1 class="fw-bolder text-white wow fadeInLeft">{{'WHO_WE_ARE.TITLE'| translate}}</h1>
+                <h4 class="fw-bold my-4 text-primary wow fadeInLeft">{{'WHO_WE_ARE.NAHJ'| translate}}</h4>
+                <p class="text-white my-4 wow fadeInLeft my-translated-paragraph" [innerHtml]="lang == 'ar' ? settings.about?.ar : settings.about?.en"></p>
+            </div>
+            <div class="col-md ms-lg-5 ms-0 mt-lg-0 mt-5 wow fadeInRight">
+                <img src="./assets/images/common/who-we-are.svg" alt="who-we-are" class="w-100">
+            </div>
+        </div>
+        <div class="row mt-5 w-100 mx-0">
+            <div class="col-md-5 me-lg-5 me-0  wow fadeInLeft">
+                <img src="./assets/images/common/vision.svg" class="w-100" alt="vision">
+            </div>
+            <div class="col-md ms-lg-5 ms-0 mt-lg-0 mt-5 wow fadeInRight">
+                <h3 class="fw-bold text-primary">{{'WHO_WE_ARE.MISSION'| translate}}</h3>
+                <p class="my-3 text-white" [innerHtml]="lang == 'ar' ? settings.mission?.ar : settings.mission?.en"></p>
+                <br>
+                <h3 class="fw-bold text-primary mt-4">{{'WHO_WE_ARE.VISION'| translate}}</h3>
+                <p class="my-3 text-white" [innerHtml]="lang == 'ar' ? settings.vision?.ar : settings.vision?.en"></p>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer [lang]="lang"></app-footer>

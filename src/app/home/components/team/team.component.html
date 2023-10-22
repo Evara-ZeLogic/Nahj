@@ -1,0 +1,172 @@
+<section id="team" [lang]="lang" class="wow fadeIn">
+    <h2 class="text-center text-white fw-bold wow fadeInDown">{{'HEADER.OUR_TEAM' | translate}}</h2>
+    <p class="text-white col-md-3 mx-auto text-center wow fadeInDown">{{'TEAM.TITLE' | translate}}</p>
+    <div class="team-members">
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide id="1" *ngFor="let employee of team">
+                <div class="card wow fadeIn">
+                    <img [src]="employee.image?.path" alt="team">
+                    <div class="team-info">
+                        <h4>{{ lang == 'ar' ? employee.name?.ar : employee.name?.en }}</h4>
+                        <h6>{{ lang == 'ar' ? employee.job_title?.ar : employee.job_title?.en }}</h6>
+                    </div>
+                </div>
+            </ng-template>
+            <!-- <ng-template carouselSlide
+        id="2">
+        <div class="card wow fadeIn">
+          <img src="./assets/images/common/team-6.svg"
+            alt="team">
+          <div class="team-info">
+            <h4>{{'TEAM.Rofaida' | translate}}</h4>
+            <h6>{{'TEAM.Rofaida_JOB' | translate}}</h6>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide
+        id="3">
+        <div class="card wow fadeIn">
+          <img src="./assets/images/common/team-2.svg"
+            alt="team">
+          <div class="team-info">
+            <h4>{{'TEAM.Sarah' | translate}}</h4>
+            <h6>{{'TEAM.Project' | translate}}</h6>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide
+        id="4">
+        <div class="card wow fadeIn">
+          <img src="./assets/images/common/team-7.svg"
+            alt="team">
+          <div class="team-info">
+            <h4>{{'TEAM.Ashraf' | translate}}</h4>
+            <h6>{{'TEAM.Ashraf_JOB' | translate}}</h6>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide
+        id="5">
+        <div class="card wow fadeIn">
+          <img src="./assets/images/common/team-3.svg"
+            alt="team">
+          <div class="team-info">
+            <h4>{{'TEAM.Randa' | translate}}</h4>
+            <h6>{{'TEAM.Renda_JOB' | translate}}</h6>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide
+        id="6">
+        <div class="card wow fadeIn">
+          <img src="./assets/images/common/team-4.svg"
+            alt="team">
+          <div class="team-info">
+            <h4>{{'TEAM.Alqattan' | translate}}</h4>
+            <h6>{{'TEAM.Consultant' | translate}}</h6>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide
+        id="7">
+        <div class="card wow fadeIn">
+          <img src="./assets/images/common/team-5.svg"
+            alt="team">
+          <div class="team-info">
+            <h4>{{'TEAM.Amr' | translate}}</h4>
+            <h6>{{'TEAM.Project' | translate}}</h6>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide
+        id="7">
+        <div class="card wow fadeIn">
+          <img src="./assets/images/common/team-8.svg"
+            alt="team">
+          <div class="team-info">
+            <h4>{{'TEAM.Alrabia' | translate}}</h4>
+            <h6>{{'TEAM.Consultant' | translate}}</h6>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide
+        id="7">
+        <div class="card wow fadeIn">
+          <img src="./assets/images/common/team-9.svg"
+            alt="team">
+          <div class="team-info">
+            <h4>{{'TEAM.Sultan' | translate}}</h4>
+            <h6>{{'TEAM.Consultant' | translate}}</h6>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide
+        id="7">
+        <div class="card wow fadeIn">
+          <img src="./assets/images/common/team-10.svg"
+            alt="team">
+          <div class="team-info">
+            <h4>{{'TEAM.Zahran' | translate}}</h4>
+            <h6>{{'TEAM.Consultant' | translate}}</h6>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide
+        id="7">
+        <div class="card wow fadeIn">
+          <img src="./assets/images/common/team-11.svg"
+            alt="team">
+          <div class="team-info">
+            <h4>{{'TEAM.Haiba' | translate}}</h4>
+            <h6>{{'TEAM.Haiba_JOB' | translate}}</h6>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide
+        id="7">
+        <div class="card wow fadeIn">
+          <img src="./assets/images/common/team-12.svg"
+            alt="team">
+          <div class="team-info">
+            <h4>{{'TEAM.Serag' | translate}}</h4>
+            <h6>{{'TEAM.Ashraf_JOB' | translate}}</h6>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide
+        id="7">
+        <div class="card wow fadeIn">
+          <img src="./assets/images/common/team-13.svg"
+            alt="team">
+          <div class="team-info">
+            <h4>{{'TEAM.Sara' | translate}}</h4>
+            <h6>{{'TEAM.Project' | translate}}</h6>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide
+        id="7">
+        <div class="card wow fadeIn">
+          <img src="./assets/images/common/team-14.svg"
+            alt="team">
+          <div class="team-info">
+            <h4>{{'TEAM.Rawan' | translate}}</h4>
+            <h6>{{'TEAM.Rawan_JOB' | translate}}</h6>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide
+        id="7">
+        <div class="card wow fadeIn">
+          <img src="./assets/images/common/team-15.svg"
+            alt="team">
+          <div class="team-info">
+            <h4>{{'TEAM.Karima' | translate}}</h4>
+            <h6>{{'TEAM.Karima_JOB' | translate}}</h6>
+          </div>
+        </div>
+      </ng-template> -->
+        </owl-carousel-o>
+    </div>
+
+</section>

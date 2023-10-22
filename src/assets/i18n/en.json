@@ -1,0 +1,287 @@
+{
+    "HEADER": {
+        "HOME": "Home",
+        "ABOUT": "About Us",
+        "SERVICES": "Services",
+        "CONTACT_US": "Contact us",
+        "OUR_TEAM": "Our Team"
+    },
+    "FOOTER": {
+        "OTHER_PAGES": "Other Pages",
+        "TEAM": "Team",
+        "CONNECT_WITH_US": "Connect with us on social",
+        "COMPANY": "Company",
+        "COPY_RIGHTS": "Copyright © 2022 All rights reserved."
+    },
+    "SERVICES": {
+        "COMMUNICATION": {
+            "COMMUNICATION_CONSULTATION": "Communication Consultation",
+            "CONSULTATION_BODY": "At Nahj media consultations, we review the overall business environment and analyze the current situation of your organization to guide you towards its envisioned future by providing an insight into the particular market you are intending to pursue.",
+            "STRATEGY": "Communication Strategies",
+            "STRATEGY_BODY": "The effective communication strategy should be human-focused. By understanding audience needs, obstacles, perceptions, and expectations based on opportunities and insights for the business, then we explore the best format, channels, and sources of influence to plan your communication strategy.",
+            "STRUCTURE": "Communication Structure",
+            "STRUCTURE_BODY": "We build a coherent system that manages the efficiency of the internal communication within the organization and the external communication between the organization and the public in order to deliver the right message to the relevant groups efficiently and accurately in a way that maintains the business image.",
+            "DEPARTMENT": "Business modeling of the communication department",
+            "DEPARTMENT_BODY": "Depending on the product or service that your organization offers, it requires a communication style that contributes to its process and, therefore, overall success. At Nahj for Media Consultation, we plan and build the right communication department that communicates correctly with the audience internally or externally.",
+            "AUDIT": "Media Strategy Audit",
+            "AUDIT_BODY": "At Nahj we understand that preparation is the key to successfully navigating reputation. we conduct a media strategy audit for our clients as a critical part of risk management. There are several key risk factors that stem from media channels, and social media accounts like counterfeit accounts, cyber risks such as phishing, and brand inconsistency that damage your brand reputation. These key threat vectors are present for every company and an audit is how you mitigate the risk.",
+            "MEDIA": "Creating Media Strategies",
+            "MEDIA_BODY": "At Nahj for Media Consultancy, we pride ourselves on developing data-driven media strategies that utilize advanced tactics driven by the latest technologies to elevate the results of your media investments. We create innovative media strategies for our clients based on research, audience insights, historical data, analysis of media consumption habits, and performance metrics.",
+            "BRAND": "Brand Monitoring",
+            "BRAND_BODY": "We track brand mentions and specific keywords on interest across all mediums from social media platforms, and TV to newspapers and more. Then we provide contextual analysis so you understand when and how you respond.",
+            "RESEARCH": "Marketing Research",
+            "RESEARCH_BODY": "Nahj's team of experts utilizing key industry trends, primary & secondary market, and media research tools, can help organizations understand their audience, identify and define key and niche target markets, and evaluate their competitive landscape. Our research services include consumer profile and insight development, as well as media landscape and medium analysis.",
+            "RELATION": "Public Relations",
+            "RELATION_BODY": "When public opinion impacts your organization's operation, we help manage the risks and most importantly, realize the opportunities. Our public relations team help organizations with:",
+            "RELATION_STEPS": {
+                "STEP1": "Evaluating the current PR strategy and providing corrective insights.",
+                "STEP2": "Creating a PR strategy that aligns with the organization’s objectives and goals.",
+                "STEP3": "Early crisis spotting.",
+                "STEP4": "Crisis management and Risk management.",
+                "STEP5": "Public relations campaigns creation and planning.",
+                "STEP6": "Consultation and advising."
+            }
+        },
+        "BRANDS": {
+            "BRAND_BUILDING": "Brand Building/ Brands Strategic Planning",
+            "BRAND_BUILDING_BODY": "We strive for our clients to achieve better results and accelerate growth and have enduring brands through advising on key opportunities that are in alignment with customer needs alongside brand strategies and plans. We help with:",
+            "STRATEGY": "Brand Strategy Planning",
+            "STRATEGY_BODY": "At Nahj, we help to establish or re-establish your brand positioning in the market by taking a customer-first approach to planning and delivering an integrated brand strategy that can help you connect with your audience in a meaningful way. By defining your brand’s purpose in relation to customer needs, your organization can truly stand out from the crowd.",
+            "POSITIONING": "Brand Positioning",
+            "POSITIONING_BODY": "Identifying your organization's value within its industry and positioning its brand is crucial to every element of your company. At Nahj for Media Consultancy, we help you articulate your values, your personality, and what makes you unique for better brand positioning and a clear messaging strategy to lay the groundwork for all your communications.",
+            "vISUAL": "Brand Visual Identity",
+            "VISUAL_BODY": "We create a full visual style guide that shows how all content should be designed and how the copy and text within the design are developed. A brand style guide will not only offer you a custom logo with branded mockups but will also give clear instructions on how to frame and construct the presentation of your brand to your audience.",
+            "MARKET": "Brand Awareness Campaigns / Go To Market Strategy",
+            "MARKET_BODY": "When you are clear on your brand strategy and goals you may need to invest in getting your organization and brand to the public. We can help you to plan, build and run promotional brand campaigns by coordinating the advertising and all the activity, either online or offline."
+        },
+        "TECHNOLOGY": {
+            "DEVELOPMENT": "Development / Technology",
+            "DEVELOPMENT_BODY": "We work closely with clients to help solidify their concepts and develop a custom solutions for their organization. Ranging from simple websites complicated mobile apps. We help with:",
+            "UIUX": "UI/UX Design",
+            "UIUX_BODY": "At Nahj, our team of designers has vast experience designing both B2B solutions and consumer solutions, we will design a system that your end-users will admire. We start crafting ideas, we like to do thorough research, then we take the research and start to implement it into affective designs. This is where you’ll see your website or App take shape. Turn to us if you need digital solutions that drive your business forward and open new markets.",
+            "WEB": "Web Development",
+            "WEB_BODY": "Our development team will use their expertise to make the website function smoothly. Usually, we create the home page first, and then all other sub-pages are added, according to the website structure agreed upon.",
+            "PORTALS": "Online Portals",
+            "PORTALS_BODY": "A web portal is a web-based platform designed for a particular target audience with a single access point to information. At Nahj, we build all types of online portals, whether it's Educational portals or Infotainment portals. We customize your portal with interactive functionality, communication features, and a secure access point for data for portal members.",
+            "PUBLICATIONS": "Interactive publications",
+            "PUBLICATIONS_BODY": "The attention span of your audience is now shorter than ever, and the importance of interactive content increases day by day. We create your publications in an interactive way to deliver your message to your public in an easy and fun way.",
+            "APPLICATION": "Web Applications",
+            "APPLICATION_BODY": "We help design, build, and evolve web-based software. Nahj is a company you can trust with the engineering of impactful, efficient, and easy-to-use corporate and customer-facing web apps, web portals, XaaS products, and more.",
+            "MOBILE": "Mobile Applications",
+            "MOBILE_BODY": "Our App development service offerings go across various concepts from fitness, shopping, ride-sharing, real estate, audiobooks, delivery, and more. We do it all from ideation, design, development, and deployment.",
+            "TOOLS": "Listening and monitoring tools",
+            "TOOLS_BODY": "We build, monitor, and influence relevant online content, wherever it lives, to emphasize the aspects of your brand you want to be known for, using qualitative and quantitative metrics to evaluate the value of your branded search results and mentions across all mediums in light of what we know about user behaviors, at the global, regional, or local level. These insights make it possible to measure success over time and provide benchmarks that resonate throughout the process and help your organization to get noticed for the right reasons."
+        },
+        "CONTENT": {
+            "CREATION": "Content Creation",
+            "CREATION_BODY": "We stay ahead of messaging and copywriting trends and constantly test messaging to ensure that the content speaks your brand's voice directly and effectively to your target audiences. We help with:",
+            "MAIN_STRATEGY": "Content Strategy",
+            "MAIN_STRATEGY_BODY": "AT Nahj, we have a deep understanding of how to create, prioritize, and distribute content that connects with your audience, where advertising is continuing to be ignored. Our team of experts will gather information, analyze data, and lead the planning for a successful content strategy that will meet the needs of your brand and your customers, and set you apart from your competition.",
+            "MESSAGING": "Messaging Strategy",
+            "MESSAGING_BODY": "Brand messaging is about the communication between organizations and their public. We help our clients connect with the audiences that mean the most to them, by crafting rich and cohesive brand messages. These brand messages bring positioning, brand identity strategies to life and create greater brand coherence and have a lasting impact on their audiences.",
+            "CREATIVE": "Creative Writing",
+            "CREATIVE_BODY": "Writing can be difficult. At Nahj, Our well-versed content writers are trained in writing in various industries and mediums. We'll utilize the information on your website, company profile, and other publications to represent your brand and deliver your message to the public",
+            "CREATIVE_STEPS": {
+                "STEP1": "Website copy",
+                "STEP2": "Ebooks",
+                "STEP3": "Press releases",
+                "STEP4": "White Papers",
+                "STEP5": "Video and Advertising Scripts",
+                "STEP6": "Blog Posts",
+                "STEP7": "Newsletters",
+                "STEP8": "Email Marketing copy"
+            },
+            "SOCIAL": "Social Media Content",
+            "SOCIAL_BODY": "We use data-driven insights from social media platforms like Facebook, Twitter, Instagram, and Snapchat to craft the perfect message and design for each platform so you can reach as many people as possible with every post. We also guide you on how to monitor all platforms so you can measure your success at driving traffic back to your website or increasing conversions directly from social media"
+        },
+        "DESIGN": {
+            "DESIGN_TITLE": "Design",
+            "DESIGN_BODY": "We leverage design thinking to achieve your organization's communication goals to provide creative solutions that suit your brand's needs the most. What we do",
+            "GRAPHIC": "Graphic Design",
+            "GRAPHIC_BODY": "At Nahj, We understand that designs should be simple, transparent, and deliver the brand's messages effectively as it plays a vital role in organization's communications with the public. We’ll create custom-tailored designs specifically for your organization that make a difference.",
+            "GRAPHIC_STEPS": {
+                "STEP1": "Advertisements",
+                "STEP2": "Billboards",
+                "STEP3": "Brochures & Catalogs",
+                "STEP4": "Flyers",
+                "STEP5": "Infographics",
+                "STEP6": "Posters",
+                "STEP7": "Presentations",
+                "STEP8": "Product packaging and labels",
+                "STEP9": "Signage and trade show displays",
+                "STEP10": "Trade show booths",
+                "STEP11": "Vehicle designs"
+            },
+            "BRANDING": "Branding",
+            "BRANDING_BODY": "Every company needs to have a consistent look and feel across all client touchpoints to ensure effective marketing that drives results. At Nahj, we deliver professional designs from logo design to advertisements, brochures, presentation folders, trade show booth displays, character design, and corporate packages.",
+            "BRANDING_STEPS": {
+                "STEP1": "Brand guidelines",
+                "STEP2": "Logo design",
+                "STEP3": "Business card design",
+                "STEP4": "Letterhead and envelope designs",
+                "STEP5": "Folders",
+                "STEP6": "Presentations templates",
+                "STEP7": "Social media templates",
+                "STEP8": "Brand Revamp"
+            }
+        },
+        "MEDIA": {
+            "PRODUCTION": "Media Production",
+            "PRODUCTION_BODY": "We take care of all the stages of media production for your organizations. We will present your products or services through carefully selected stories and illustrations. What we do:",
+            "MEDIA_sTEPS": {
+                "STEP1": "Photography",
+                "STEP2": "Videography",
+                "STEP3": "Motion graphics",
+                "STEP4": "Podcasts ",
+                "STEP5": "Media Editing / Post Production"
+            }
+        },
+        "EVENT": {
+            "MANAGEMENT": "Event Management",
+            "MANAGEMENT_BODY": "Nahj team works seamlessly to achieve the organization's visions and goals by providing integrated event management tailored to build memorable events in-person, virtual, or hybrid. We provide full event planning and execution services from application procedures, logistics, hospitality arrangements, International sponsors, and guests to Gifts and favors"
+        },
+        "REPORTING": {
+            "ANALYSIS": "Reporting & Analytics",
+            "ANALYSIS_BODY": "At Nahj, we believe in multi-channel attribution to better identify, understand, and engage with your audience. We execute analytics audits and build a measurement strategy framework to serve as the base of all analytics implementation and optimizing strategies for online and offline exposure.",
+            "BUSINESS": "Business research",
+            "BUSINESS_BODY": "Business research helps organizations identify opportunities in the market and to develop a strong strategy for approaching those markets, taking into account the needs and desires of your target audience and the current offerings from competitors. Using techniques like SWOT and PESTEL analysis, we can determine where your best opportunities lie and what changes you can and should make to best position yourself against the competition. Business research also offers useful data for how best to package and deliver products and services to customers and how to price those products to be enticing and competitive in a crowded marketplace. At Nahj, we can also identify through industry and competitor profiling who presents the best opportunity for collaboration and give you the data needed to proceed and develop those collaborations",
+            "MEDIA": "Media Analysis Reports",
+            "MEDIA_BODY": "At Nahj media consultations, as an upscale media research service provider, we specialize in providing world-class services which can provide key insights into the flow of information across markets, communities, regions, channels, etc. Armed with the latest technological tools and a team consisting of some of the world's best media researchers, we understand your complex requirements and then customize our services for your needs. From identifying customer behavior to shaping customer experiences, understanding media views, preferences, tastes, etc. in real-time, we can change the way your company looks at media and leverage the same for future growth.",
+            "NEWS": "News Analysis Reports",
+            "NEWS_BODY": "In a constantly changing and overwhelming news environment, companies and government agencies may find it challenging to track and make sense of the latest, most credible, and relevant mainstream and social media content. Nahj Media Consultations monitors and analyzes real-time information, enabling organizations to craft actionable communication strategies. Nahj's proactive analysis considers the client’s industry in the context of the overall news cycle from global print, online, broadcast, and social media outlets. Our team analyzes a high volume of ongoing media updates 24 hours a day to prepare insightful and objective reports driven by our client’s immediate needs and long-term strategies."
+        }
+    },
+    "HERO": {
+        "CONNECTING": "Integrated Communications Solutions.",
+        "BUTTON": "Learn More",
+        "EXPLORE": "EXPLORE"
+    },
+    "ABOUT": {
+        "ABOUT_US": "Nahj for media consultancy is a full-fledged marketing agency specialized in various media and marketing services, whether media consultation, media production, branding, graphic designs, developments, or digital marketing. We aim to create innovative solutions that enable businesses to stand out and achieve remarkable success and growth. "
+    },
+    "WHO_WE_ARE": {
+        "TITLE": "WHO WE ARE",
+        "NAHJ": "Nahj ,",
+        "P": "is a media consultancy founded with the core purpose to help organizations reach the next level.\n\n  We believe in creativity, innovation, and authenticity. With years of experience in design, marketing and development, we create customized solutions that meet each business's unique needs \n\n Nahj is a Corporate Communications Agency that aims to connect businesses with their audience.. From complicated media services to simple graphic designs, we’ve got you covered.",
+        "MISSION": "Our Mission",
+        "MISSION_BODY": "We aspire to help businesses expand by providing excellent advertising marketing services and to keep clients happy by providing convenience, enjoyment, and value through our innovative ideas.",
+        "VISION": "Our Vision",
+        "VISION_BODY": "We strive to become the one-stop solution to improving visual communication and the value we add to business and society."
+    },
+    "TIMELINE": {
+        "KNOW": "Know",
+        "HOW_WE_DO_IT": "How we do it",
+        "OBJECTIVES": "1.Objectives",
+        "OBJECTIVES_BODY": "The first stage is where we join forces to specify objectives and KPIs to ensure that our efforts are focused on achieving your business goals and that you're able to measure them in the long term.",
+        "AUDIT": "2.Audit",
+        "AUDIT_BODY": "Secondly, we conduct an audit on your current media presence to identify points of strength and recommend areas for improvement.",
+        "RESEARCH": "3.Research",
+        "RESEARCH_BODY": "We gather data on how your competitors perform, communicate, and interact with the audience and use it to create an effective strategy for growing your organization.",
+        "STRATEGY": "4.Strategy",
+        "STRATEGY_BODY": "We develop your communication strategy with an action plan on how to enhance brand awareness, messaging, and communication to reach more people, engage with them and convert them into loyal clients.",
+        "EXECUTION": "5.Execution",
+        "EXECUTION_BODY": "During this phase of our process, we’ll take the strategy to the next level by helping create all the necessary assets, and taking all actions to put your communication strategy into action.",
+        "MONITORING": "6.Monitoring ",
+        "MONITORING_BODY": "A communication strategy’s effectiveness will change over time as the media landscape changes and audience needs evolve, so it’s important to be able to monitor your brand's reputation on an ongoing basis. We monitor, audit, and adjust the marketing & communications using insights software to improve and adjust the strategy when needed."
+    },
+    "HOME_SERVICE_COMMUNICATION": {
+        "TITLE": "Our Services",
+        "SUB_TITLE": "Nahj is a Corporate Communications Agency that aims to connect businesses with their audience. From complicated media services to simple graphic designs, we’ve got you covered",
+        "STEPS": {
+            "STEP1": "Communications Strategies",
+            "STEP2": "Modeling Communication Department",
+            "STEP3": "Media Strategy Audit",
+            "STEP4": "Creating Media Strategies",
+            "STEP5": "Brand Monitoring",
+            "STEP6": "Marketing Research",
+            "STEP7": "Public Relations"
+        }
+    },
+    "HOME_SERVICE_BRANDS": {
+        "STEPS": {
+            "STEP1": "Brand Strategy Planning",
+            "STEP2": "Brand Positioning",
+            "STEP3": "Brand Visual Identity",
+            "STEP4": "Brand Awareness Campaigns (Go To Market Strategy)"
+        }
+    },
+    "HOME_SERVICE_TECHNOLOGY": {
+        "STEPS": {
+            "STEP1": "UI/UX Design",
+            "STEP2": "Web Development",
+            "STEP3": "Online Portals",
+            "STEP4": "Interactive publications",
+            "STEP5": "Web Applications",
+            "STEP6": "Mobile Applications",
+            "STEP7": "Listening and monitoring tools"
+        }
+    },
+    "HOME_SERVICE_CONTENT": {
+        "CONTENT_BODY": "We stay ahead of messaging and copywriting trends and constantly test messaging to ensure that the content speaks your brand's voice directly and effectively to your target audiences. We help with:",
+        "STEPS": {
+            "STEP1": "Content Strategy",
+            "STEP2": "Messaging Strategy",
+            "STEP3": "Creative Writing",
+            "STEP4": "Social Media Content"
+        }
+    },
+    "HOME_SERVICE_EVENT": {
+        "STEPS": {
+            "STEP1": "Full event planning (Application procedures, logistics, hospitality arrangements)",
+            "STEP2": "International sponsors and guests",
+            "STEP3": "Gifts and favors"
+        }
+    },
+    "TEAM": {
+        "TITLE": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Serene": "Serene Elawaad",
+        "Serene_JOB": "Media Projects Coordinator",
+        "Rofaida": "Rofaida Khaled",
+        "Rofaida_JOB": "Graphic designer",
+        "Sarah": "Sarah Mostafa",
+        "Ashraf": "Muhammad Ashraf",
+        "Ashraf_JOB": "Senior Product Designer",
+        "Randa": "Randa Ala",
+        "Renda_JOB": "Senior Graphic Designer",
+        "Alqattan": "Abdallah Alqattan",
+        "Consultant": "Consultant",
+        "Amr": "Amr Fadel",
+        "Project": "Project Manager",
+        "Alrabia": "Abdelrahman Alrabia",
+        "Sultan": "Sultan Almasoud",
+        "Zahran": "Alaa Zahran",
+        "Haiba": "Mohamed Abu Haiba",
+        "Haiba_JOB": "Business Support Manager",
+        "Serag": "Amr Serag",
+        "Sara": "Sara Abo Khatwa",
+        "Rawan": "Rawan Al Shodoukhi-PR",
+        "Rawan_JOB": "Marketing Specialist",
+        "Karima": "Karima Wali",
+        "Karima_JOB": "Team Leader"
+    },
+    "CLIENTS": {
+        "KNOW": "Know",
+        "CLIENTS": "Our Clients"
+    },
+    "REVIEWS": {
+        "TITLE": "Our Clients Speak "
+    },
+    "CONTACT": {
+        "START_PROJECT": "START YOUR PROJECT",
+        "PROJECT_BODY": "Make your communications get noticed, encourage action and drive revenue.",
+        "WORK_TOGETHER_TITLE": "Let’s Work together",
+        "WORK_TOGETHER_BODY": "Get in touch with us to see how our company can help you grow your business.",
+        "FORM": {
+            "NAME": "Name",
+            "SUBJECT": "Subject",
+            "SUBJECT_PLACEHOLDER": "Subject",
+            "NAME_PLACEHOLDER": "Your Name",
+            "EMAIL": "Email",
+            "EMAIL_PLACEHOLDER": "Your Email",
+            "PHONE": "Phone",
+            "PHONE_PLACEHOLDER": "Your Phone",
+            "DETAILS": "Details",
+            "SUBMIT": "SUBMIT"
+        }
+    }
+}

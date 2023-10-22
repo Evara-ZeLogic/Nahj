@@ -1,0 +1,21 @@
+<section id="about-us" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'" class="wow fadeIn">
+    <div class="container">
+        <div class="row mx-0 w-100 justify-content-between">
+            <div class="col-md me-lg-5 me-0 about-img-side">
+                <img src="./assets/images/common/Ellipse 40.svg" class="ellipse-40" alt="es40">
+                <img src="./assets/images/common/about.png" alt="About" class="w-100 wow fadeIn">
+                <img src="./assets/images/common/Ellipse 39.svg" class="ellipse-39" alt="es39">
+            </div>
+            <div class="col-md about ms-lg-5 ms-0 mt-lg-0 mt-5">
+                <img src="./assets/images/common/Ellipse 38.svg" alt="Ellipse" class="ellipse-38">
+                <img src="./assets/images/common/Dots.svg" alt="dots" class="dots">
+                <img src="./assets/images/common/about-text.svg" alt="about" class="about-img w-100">
+                <p class="mt-5 text-white wow fadeInDown" [innerHtml]="lang =='en' ? settings.newAboutEn : settings.newAbout"></p>
+                <button class="btn btn-secondary wow fadeInDown d-flex align-items-center justify-content-center mt-5" routerLink="/about">
+          <span class="m{{lang === 'en' ? 'e' : 's'}}-3">{{"HERO.BUTTON" | translate}}</span>
+          <img src="./assets/images/icons/btn-arrow.svg" alt="arrow">
+        </button>
+            </div>
+        </div>
+    </div>
+</section>

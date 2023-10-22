@@ -1,0 +1,7 @@
+<app-header-white (getCurrentLang)="selectLang($event)"></app-header-white>
+<div class="services-lang"
+  [lang]="lang"
+  [dir]="lang == 'en' ? 'ltr': 'rtl'">
+  <router-outlet></router-outlet>
+</div>
+<app-footer [lang]="lang"></app-footer>

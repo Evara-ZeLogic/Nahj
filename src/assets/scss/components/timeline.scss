@@ -1,0 +1,187 @@
+#timeline {
+    overflow: hidden;
+    background: url("../../../assets/images/common/how-we-do-it.png");
+    background-attachment: fixed;
+    padding: 88px 0;
+    .how-we-do-it {
+        h1 {
+            margin: 8px 0 16px 0;
+            font-size: 48px;
+        }
+        h6 {
+            font-size: 16px;
+        }
+    }
+    .timeline {
+        position: relative;
+        margin: 88px auto 0 auto;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 2px;
+            background-color: $primary;
+            top: 160px;
+            bottom: 0;
+            left: 48%;
+            height: 80%;
+        }
+        .container-time {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            .content {
+                background-color: white;
+                box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
+                border-radius: 4px;
+                position: relative;
+                border-radius: 6px;
+                width: 484px;
+                transition: 0.5s all ease-in-out;
+                &:hover {
+                    .icon {
+                        background: $dark;
+                        transition: 0.5s all ease-in-out;
+                    }
+                }
+                p {
+                    padding: 24px 21px 32px 16px;
+                    color: #32383e;
+                }
+                .icon {
+                    background: $primary;
+                    width: 108px;
+                    height: 108px;
+                    border-radius: 4px 0px 4px 4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                h2 {
+                    margin-left: 24px;
+                }
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                right: 13px;
+                background-color: $primary;
+                top: 153px;
+                border-radius: 50%;
+                z-index: 1;
+            }
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+            &::after {
+                left: -35px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    /* Place the timelime to the left */
+    .timeline::after {
+        display: none;
+    }
+    /* Full-width containers */
+    .container-time {
+        width: 100% !important;
+        padding: 0 !important;
+        margin-bottom: 15px;
+        &::after {
+            display: none;
+        }
+    }
+    .content {
+        width: 100% !important;
+    }
+    .left {
+        left: unset;
+    }
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: unset !important;
+    }
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: unset !important;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    /* Place the timelime to the left */
+    .timeline::after {
+        display: none;
+    }
+    /* Full-width containers */
+    .container-time {
+        width: 100% !important;
+        padding: 0 !important;
+        margin-bottom: 15px;
+        &::after {
+            display: none;
+        }
+    }
+    .content {
+        width: 100% !important;
+    }
+    .left {
+        left: unset;
+    }
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: unset !important;
+    }
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: unset !important;
+    }
+}
+
+#timeline[lang="ar"] {
+    font-family: "Cairo";
+    text-align: right;
+    .timeline {
+        .container-time {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            .content {
+                direction: rtl;
+                h2 {
+                    margin-right: 24px;
+                }
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                right: 13px;
+                background-color: $primary;
+                top: 153px;
+                border-radius: 50%;
+                z-index: 1;
+            }
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+            &::after {
+                left: -35px;
+            }
+        }
+    }
+}

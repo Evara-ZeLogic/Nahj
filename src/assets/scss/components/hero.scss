@@ -1,0 +1,170 @@
+#hero {
+    position: relative;
+    height: 100vh;
+    video {
+        filter: grayscale(0.8);
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .hero-text {
+        padding-top: 230px;
+        h1 {
+            line-height: 70px;
+        }
+    }
+    .social-links {
+        a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 80px;
+            padding: 10px;
+            transition: 0.5s all ease-in-out;
+            &:hover {
+                background: $primary;
+                border: 1px solid #fff;
+            }
+            img {
+                width: 22px;
+            }
+            img.facebook {
+                width: 11px;
+            }
+        }
+    }
+}
+
+.scroll-down {
+    position: absolute;
+    top: 660px;
+    left: 50%;
+    button {
+        width: 40px;
+        height: 40px;
+        background: $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 32px;
+        color: #fff;
+        border: 0;
+        margin-top: 8px;
+        transition: 0.5s all ease-in-out;
+        &:hover {
+            transition: 0.5s all ease-in-out;
+            background: $dark;
+        }
+    }
+}
+
+.scroll-up {
+    position: fixed;
+    top: 71%;
+    right: 15px;
+    z-index: 9999999;
+    button {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #ffffff;
+        border-radius: 32px;
+        background: rgba(242, 7, 50, 0.1);
+        color: #fff;
+        transition: 0.5s all ease-in-out;
+        &:hover {
+            transition: 0.5s all ease-in-out;
+            background: #fff;
+            color: $primary;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .scroll-down {
+        top: 100%;
+    }
+    #hero {
+        video {
+            width: 100% !important;
+            max-height: 100%;
+        }
+        .hero-text {
+            padding-top: 20%;
+            h1 {
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .scroll-down {
+        top: 100%;
+    }
+    #hero {
+        video {
+            width: 100% !important;
+            max-height: 100%;
+        }
+        .hero-text {
+            padding-top: 20%;
+            h1 {
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+#hero[lang="ar"] {
+    font-family: "Cairo";
+    .hero-text {
+        h1 {
+            line-height: 70px;
+            text-align: right;
+        }
+        button {
+            img {
+                transform: rotate(180deg);
+            }
+        }
+        a.btn-primary {
+            img {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .social-links {
+        a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 80px;
+            padding: 10px;
+            transition: 0.5s all ease-in-out;
+            &:hover {
+                background: $primary;
+                border: 1px solid #fff;
+            }
+            img {
+                width: 22px;
+            }
+            img.facebook {
+                width: 11px;
+            }
+        }
+    }
+}
+
+.scroll-down[lang="ar"] {
+    font-family: "Cairo";
+}

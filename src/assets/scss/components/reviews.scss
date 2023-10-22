@@ -1,0 +1,134 @@
+#reviews {
+  background: url("../../images/common/map.svg");
+  background-attachment: fixed;
+  background-color: #fafafa;
+  padding: 88px 0;
+  h2 {
+    font-size: 48px;
+  }
+  p.main-p {
+    margin-top: 16px;
+    line-height: 180%;
+    color: #878787;
+  }
+  .reviews {
+    margin-top: 71px;
+    .owl-item {
+      h4 {
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+      p {
+        color: #878787;
+        font-size: 14px;
+        margin-bottom: 16px;
+      }
+      .card {
+        padding: 28px 25px;
+        border: 0;
+        background: #fff;
+        position: relative;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
+        border-radius: 4px;
+      }
+    }
+  }
+  .owl-theme .owl-dots {
+    margin-top: 34px;
+  }
+  .owl-theme .owl-dots .owl-dot {
+    span {
+      background: rgba(242, 7, 50, 0.1);
+    }
+  }
+  .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: $primary;
+  }
+
+  .owl-theme .owl-nav [class*="owl-"] {
+    width: 40px;
+    height: 40px;
+    background: #1aa2da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    position: absolute;
+    top: 117px;
+    &:hover {
+      background: $primary;
+      transition: 0.6s all ease-in-out;
+    }
+  }
+  .owl-carousel .owl-nav .owl-next {
+    right: -75px;
+  }
+  .owl-carousel .owl-nav .owl-prev {
+    left: -75px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  #reviews {
+    h2 {
+      font-size: 35px;
+    }
+    .reviews {
+      .card {
+        width: 100%;
+        .team-info {
+          width: 100%;
+        }
+      }
+    }
+    .owl-carousel .owl-nav {
+      top: 93px;
+      position: absolute;
+      left: 201px;
+    }
+  }
+  #reviews .owl-carousel .owl-nav {
+    display: none;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  #reviews {
+    h2 {
+      font-size: 35px;
+    }
+    .reviews {
+      .card {
+        width: 100%;
+        .team-info {
+          width: 100%;
+        }
+      }
+    }
+    .owl-carousel .owl-nav {
+      top: 93px;
+      position: absolute;
+      left: 201px;
+    }
+  }
+  #reviews .owl-carousel .owl-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  #reviews .owl-carousel .owl-nav .owl-prev {
+    left: -56px;
+  }
+  #reviews .owl-carousel .owl-nav .owl-next {
+    right: -56px;
+  }
+  #reviews .owl-carousel .owl-nav {
+    display: none;
+  }
+}
+
+#reviews[lang="ar"] {
+  font-family: "Cairo";
+}

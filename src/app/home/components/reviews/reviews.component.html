@@ -1,0 +1,88 @@
+<section id="reviews" [lang]="lang" class="wow fadeIn">
+    <h2 class="text-center text-dark fw-bolder wow fadeInDown">{{'REVIEWS.TITLE' | translate}}</h2>
+    <!-- <p class="col-md-3 mx-auto text-center wow fadeInDown main-p">Lorem Ipsum is simply dummy text of the printing and
+    typesetting
+    industry.</p> -->
+    <div class="reviews">
+        <div class="container">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide id="1" *ngFor="let testimonial of testimonials">
+                    <div class="col-md-11">
+                        <h4 class="cairo fw-bold text-end">{{ lang == 'ar' ? testimonial.name?.ar : testimonial.name?.en }}</h4>
+                        <p class="cairo text-end">{{ lang == 'ar' ? testimonial.job_title?.ar : testimonial.job_title?.en }}</p>
+                        <div class="card wow fadeIn">
+                            <i class="fa-solid fa-quote-left text-primary"></i>
+                            <p class="cairo text-end" [innerHtml]="lang == 'ar' ? testimonial.description?.ar : testimonial.description?.en"></p>
+                            <i class="fa-solid fa-quote-right text-primary text-end"></i>
+                        </div>
+                    </div>
+                </ng-template>
+                <!-- <ng-template carouselSlide
+          id="1">
+          <div class="col-md-11">
+            <h4 class="cairo fw-bold text-end">م.خالد بن حيدر الخنانى</h4>
+            <p class="cairo text-end">مستشار بوزارة البيئة والمياه والزراعة</p>
+            <div class="card wow fadeIn">
+              <i class="fa-solid fa-quote-left text-primary"></i>
+              <p class="cairo text-end">تنفيذ الاعمال الموكله لها بكل احترافيه ومصداقيه كما يساعدها في ذلك فريق عمل مميز
+                ومكون من
+                مزيج ما بين اصحاب الخبرات
+                والعناصر الشابه اتوقع لنهج تطور وتوسع سريع في ظل تنفيذها للعديد من المشاريع والمؤتمرات
+              </p>
+              <i class="fa-solid fa-quote-right text-primary text-end"></i>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide
+          id="1">
+          <div class="col-md-11">
+            <h4 class="cairo fw-bold text-end">م.خالد بن حيدر الخنانى</h4>
+            <p class="cairo text-end">مستشار بوزارة البيئة والمياه والزراعة</p>
+            <div class="card wow fadeIn">
+              <i class="fa-solid fa-quote-left text-primary"></i>
+              <p class="cairo text-end">تنفيذ الاعمال الموكله لها بكل احترافيه ومصداقيه كما يساعدها في ذلك فريق عمل مميز
+                ومكون من
+                مزيج ما بين اصحاب الخبرات
+                والعناصر الشابه اتوقع لنهج تطور وتوسع سريع في ظل تنفيذها للعديد من المشاريع والمؤتمرات
+              </p>
+              <i class="fa-solid fa-quote-right text-primary text-end"></i>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide
+          id="1">
+          <div class="col-md-11">
+            <h4 class="cairo fw-bold text-end">م.خالد بن حيدر الخنانى</h4>
+            <p class="cairo text-end">مستشار بوزارة البيئة والمياه والزراعة</p>
+            <div class="card wow fadeIn">
+              <i class="fa-solid fa-quote-left text-primary"></i>
+              <p class="cairo text-end">تنفيذ الاعمال الموكله لها بكل احترافيه ومصداقيه كما يساعدها في ذلك فريق عمل مميز
+                ومكون من
+                مزيج ما بين اصحاب الخبرات
+                والعناصر الشابه اتوقع لنهج تطور وتوسع سريع في ظل تنفيذها للعديد من المشاريع والمؤتمرات
+              </p>
+              <i class="fa-solid fa-quote-right text-primary text-end"></i>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide
+          id="1">
+          <div class="col-md-11">
+            <h4 class="cairo fw-bold text-end">م.خالد بن حيدر الخنانى</h4>
+            <p class="cairo text-end">مستشار بوزارة البيئة والمياه والزراعة</p>
+            <div class="card wow fadeIn">
+              <i class="fa-solid fa-quote-left text-primary"></i>
+              <p class="cairo text-end">تنفيذ الاعمال الموكله لها بكل احترافيه ومصداقيه كما يساعدها في ذلك فريق عمل مميز
+                ومكون من
+                مزيج ما بين اصحاب الخبرات
+                والعناصر الشابه اتوقع لنهج تطور وتوسع سريع في ظل تنفيذها للعديد من المشاريع والمؤتمرات
+              </p>
+              <i class="fa-solid fa-quote-right text-primary text-end"></i>
+            </div>
+          </div>
+        </ng-template> -->
+            </owl-carousel-o>
+        </div>
+    </div>
+
+</section>

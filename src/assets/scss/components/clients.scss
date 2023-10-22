@@ -1,0 +1,76 @@
+#clients {
+    background-image: url("../../images/common/map.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 88px 0;
+    .our-clients {
+        h1 {
+            margin: 8px 0 16px 0;
+            font-size: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &::before {
+                content: "";
+                width: 31px;
+                height: 8px;
+                display: flex;
+                border-radius: 8px 0px 0px 8px;
+                background-color: $primary;
+                margin-right: 26px;
+            }
+        }
+        h6 {
+            font-size: 16px;
+        }
+        p {
+            color: #878787;
+        }
+    }
+    .clients {
+        .col-md-2 {
+            margin-top: 24px;
+        }
+        .card {
+            border: 0;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s all ease-in-out;
+            padding: 27px 27px 26px 26px;
+            //  :hover {
+            //     transform: scale(1.2);
+            //     transition: 0.5s all ease-in-out;
+            // }
+            img {
+                width: 134px;
+                height: 134px;
+                transition: all .25s ease-in-out;
+            }
+        }
+    }
+}
+
+#clients .clients .card:hover img {
+    transform: scale(1.1);
+}
+
+@media (width: 800px) {
+    #clients {
+        .clients {
+            .card {
+                img {
+                    width: 170%;
+                    height: unset;
+                }
+            }
+        }
+    }
+}
+
+#clients[lang="ar"] {
+    font-family: "Cairo";
+}

@@ -1,0 +1,39 @@
+<section id="service" class="wow fadeIn">
+    <div class="container">
+        <div class="row w-100 mx-0 align-items-start">
+            <div class="col-md-6 wow fadeInLeft order-1 order-md-0">
+                <h2 class="text-primary fw-bolder">{{ translate.currentLang == 'ar' ? service.title?.ar : service.title?.en }}
+                </h2>
+                <p class="" [innerHtml]="translate.currentLang == 'ar' ? service.description?.ar : service.description?.en"></p>
+                <!-- <h4>{{'SERVICES.COMMUNICATION.STRATEGY' | translate}}</h4>
+                <p>{{'SERVICES.COMMUNICATION.STRATEGY_BODY' | translate}}</p>
+                <h4>{{'SERVICES.COMMUNICATION.STRUCTURE' | translate}}</h4>
+                <p>{{'SERVICES.COMMUNICATION.STRUCTURE_BODY' | translate}}</p>
+                <h4>{{'SERVICES.COMMUNICATION.DEPARTMENT' | translate}}</h4>
+                <p>{{'SERVICES.COMMUNICATION.DEPARTMENT_BODY' | translate}}</p>
+                <h4>{{'SERVICES.COMMUNICATION.AUDIT' | translate}}</h4>
+                <p>{{'SERVICES.COMMUNICATION.AUDIT_BODY' | translate}}</p>
+                <h4>{{'SERVICES.COMMUNICATION.MEDIA' | translate}}</h4>
+                <p>{{'SERVICES.COMMUNICATION.MEDIA_BODY' | translate}}</p>
+                <h4>{{'SERVICES.COMMUNICATION.BRAND' | translate}}</h4>
+                <p>{{'SERVICES.COMMUNICATION.BRAND_BODY' | translate}}</p>
+                <h4>{{'SERVICES.COMMUNICATION.BRAND' | translate}}</h4>
+                <p>{{'SERVICES.COMMUNICATION.BRAND_BODY' | translate}}</p>
+                <h4>{{'SERVICES.COMMUNICATION.RESEARCH' | translate}}</h4>
+                <p>{{'SERVICES.COMMUNICATION.RESEARCH_BODY' | translate}}</p>
+                <h4>{{'SERVICES.COMMUNICATION.RELATION' | translate}}</h4>
+                <p>{{'SERVICES.COMMUNICATION.RELATION_BODY' | translate}}</p>
+                <ul>
+                    <li><span>{{'SERVICES.COMMUNICATION.RELATION_STEPS.STEP1' | translate}}</span></li>
+                    <li><span>{{'SERVICES.COMMUNICATION.RELATION_STEPS.STEP2' | translate}}</span></li>
+                    <li><span>{{'SERVICES.COMMUNICATION.RELATION_STEPS.STEP3' | translate}}</span></li>
+                    <li><span>{{'SERVICES.COMMUNICATION.RELATION_STEPS.STEP4' | translate}}</span></li>
+                    <li><span>{{'SERVICES.COMMUNICATION.RELATION_STEPS.STEP5' | translate}}</span></li>
+                </ul> -->
+            </div>
+            <div class="col-md-6 wow fadeInRight d-flex justify-content-end order-0 order-md-1">
+                <img [src]="service.image?.path" [alt]="service.image?.alt">
+            </div>
+        </div>
+    </div>
+</section>

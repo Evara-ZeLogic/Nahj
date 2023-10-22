@@ -1,0 +1,134 @@
+#about-us {
+  background: $primary;
+  position: relative;
+  overflow: hidden;
+  .container {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .about {
+    .dots {
+      position: absolute;
+      animation: dotAnimate 3s linear infinite;
+      top: 66%;
+      right: -310px;
+    }
+    .ellipse-38 {
+      position: absolute;
+      animation: ellipseRight 3s linear infinite;
+      top: 0px;
+      right: 0;
+    }
+    p {
+      font-size: 16px;
+    }
+    button {
+      padding: 16px 24px;
+      width: 188px;
+      height: 56px;
+      background: $primary;
+      border: 1px solid #ffffff;
+      border-radius: 8px;
+      color: #ffffff;
+      transition: 0.5s all ease-in-out;
+      img {
+        transition: 0.5s all ease-in-out;
+      }
+      &:hover {
+        background: $dark;
+        img {
+          transform: translateX(10px);
+        }
+      }
+    }
+  }
+  .about-img-side {
+    .ellipse-40 {
+      animation: ellipseRight 3s linear infinite;
+      top: 0;
+      left: -54px;
+      position: absolute;
+    }
+    .ellipse-39 {
+      animation: ellipseRight 3s linear infinite;
+      top: 430px;
+      left: -54px;
+      position: absolute;
+    }
+  }
+}
+
+@keyframes dotAnimate {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes ellipseRight {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes ellipseLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  #about-us {
+    .about {
+      .dots {
+        top: 88%;
+        right: -442px;
+      }
+      .ellipse-38 {
+        top: 366px;
+        right: 0;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  #about-us {
+    .about {
+      .dots {
+        top: 88%;
+        right: -442px;
+      }
+      .ellipse-38 {
+        top: 366px;
+        right: 0;
+      }
+    }
+  }
+}
+
+#about-us[lang="ar"] {
+  font-family: "Cairo";
+  button {
+    img {
+      transform: rotate(180deg);
+    }
+  }
+}

@@ -1,0 +1,93 @@
+<footer class="py-5 wow fadeIn" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'">
+    <div class="container mt-5">
+        <div class="row mx-0 w-100 justify-content-between">
+            <div class="col-md px-0">
+                <img src="./assets/images/common/logo-footer.svg" alt="logo">
+                <p class="text-muted my-4 wow fadeIn" [innerHtml]="lang =='en' ? settings.newAboutEn : settings.newAbout"></p>
+                <ul class="contact-us list-unstyled px-0">
+                    <li class="d-flex align-items-center mt-4 wow fadeIn">
+                        <img src="./assets/images/icons/phone.svg" alt="">
+                        <span class="text-white mx-3">{{settings.phone}}
+                        </span>
+                    </li>
+                    <li class="d-flex align-items-center mt-4 wow fadeIn">
+                        <img src="./assets/images/icons/email.svg" alt="">
+                        <span class="text-white mx-3">{{settings.email}}
+                        </span>
+                    </li>
+                    <li class="d-flex align-items-center mt-4 wow fadeIn">
+                        <img src="./assets/images/icons/location.svg" alt="">
+                        <span class="text-white mx-3">{{settings.address}}
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md mx-lg-5 mx-0 mt-4 mt-lg-0 px-0">
+                <h5 class="text-white wow fadeIn">{{'FOOTER.OTHER_PAGES' | translate }}</h5>
+                <ul class="contact-us links list-unstyled px-0 mt-4">
+                    <li class="d-flex align-items-center mt-3 wow fadeIn">
+                        <img src="./assets/images/icons/arrow-right.svg" alt="">
+                        <a class="text-white mx-3" [routerLink]="['/home', {section: 'hero'}]">{{'HEADER.HOME' |
+                            translate }}
+                        </a>
+                    </li>
+                    <li class="d-flex align-items-center mt-3 wow fadeIn">
+                        <img src="./assets/images/icons/arrow-right.svg" alt="">
+                        <a class="text-white mx-3" [routerLink]="['/home', {section: 'about'}]">{{'HEADER.ABOUT' |
+                            translate }}
+                        </a>
+                    </li>
+                    <li class="d-flex align-items-center mt-3 wow fadeIn">
+                        <img src="./assets/images/icons/arrow-right.svg" alt="">
+                        <a class="text-white mx-3" [routerLink]="['/home', {section: 'services'}]">{{'HEADER.SERVICES' |
+                            translate }}
+                        </a>
+                    </li>
+                    <li class="d-flex align-items-center mt-3 wow fadeIn">
+                        <img src="./assets/images/icons/arrow-right.svg" alt="">
+                        <a class="text-white mx-3" [routerLink]="['/home', {section: 'team'}]">{{'FOOTER.TEAM' |
+                            translate }}
+                        </a>
+                    </li>
+                    <li class="d-flex align-items-center mt-3 wow fadeIn">
+                        <img src="./assets/images/icons/arrow-right.svg" alt="">
+                        <a class="text-white mx-3" [routerLink]="['/home', {section: 'contact-us'}]">{{'HEADER.CONTACT_US' | translate }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md d-flex flex-column align-items-lg-end mt-lg-0 mt-4 px-0">
+                <h5 class="text-white wow fadeIn">{{'FOOTER.CONNECT_WITH_US' | translate }}</h5>
+                <div class="
+          social-links
+          d-flex
+          align-items-center
+          mt-4
+          wow
+          fadeIn">
+                    <a *ngIf="settings.facebook" [href]="settings.facebook" target="_blank">
+                        <img src="./assets/images/icons/instagram.svg" alt="instagram">
+                    </a>
+                    <a class="ms-4" *ngIf="settings.youtube" [href]="settings.youtube">
+                        <img src="./assets/images/icons/youtube.svg" alt="youtube">
+                    </a>
+                    <a class="mx-4" *ngIf="settings.twitter" [href]="settings.twitter" target="_blank">
+                        <img src="./assets/images/icons/twitter.svg" alt="twitter">
+                    </a>
+                    <a *ngIf="settings.facebook" [href]="settings.facebook" target="_blank">
+                        <img src="./assets/images/icons/facebook.svg" alt="facebook" class="facebook">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between mt-5">
+            <p class="text-white wow fadeIn">
+                {{'FOOTER.COMPANY' | translate}} © NAHJ
+            </p>
+            <p class="text-white wow fadeIn">{{'FOOTER.COPY_RIGHTS' | translate}}</p>
+        </div>
+    </div>
+</footer>

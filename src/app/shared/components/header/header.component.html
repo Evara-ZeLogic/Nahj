@@ -1,0 +1,88 @@
+<div class="pt-3 bg-primary sticky-top wow fadeIn" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="social-links d-flex align-items-center">
+                <a *ngIf="settings.instagram" [href]="settings.instagram" target="_blank">
+                    <img src="./assets/images/icons/instagram.svg" alt="instagram">
+                </a>
+                <a class="mx-2" *ngIf="settings.twitter" [href]="settings.twitter" target="_blank">
+                    <img src="./assets/images/icons/twitter.svg" alt="twitter">
+                </a>
+                <a *ngIf="settings.facebook" [href]="settings.facebook" target="_blank">
+                    <img src="./assets/images/icons/facebook.svg" alt="facebook">
+                </a>
+            </div>
+            <div class="language">
+                <select name="" (change)="changeLanguage($event.target)" class="cairo" [(ngModel)]="lang">
+                    <option value="en">English</option>
+                    <option value="ar" class="cairo">العربية</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-primary wow fadeIn" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'">
+    <div class="container">
+        <a class="navbar-brand pointer py-3" routerLink="/home">
+            <img src="./assets/images/common/logo-white.svg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m{{lang == 'en' ? 's': 'e'}}-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link wow fadeIn" aria-current="page" [routerLink]="['/home']" routerLinkActive="active">{{'HEADER.HOME' | translate}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link wow fadeIn" routerLinkActive="active" [routerLink]="['/about']">{{'HEADER.ABOUT'
+                        | translate }}</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle wow fadeIn" [ngClass]="{}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        {{'HEADER.SERVICES' | translate}}
+                        <img src="./assets/images/icons/select-arrow.svg" alt="select">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li *ngFor="let service of services">
+                            <a class="dropdown-item" [routerLink]="'/services/details/' + service.slug" routerLinkActive="active">{{ lang == 'ar' ? service.title?.ar : service.title?.en }}</a>
+                        </li>
+                        <!-- <li>
+                            <a class="dropdown-item" routerLinkActive routerLinkActive="active" #brands="routerLinkActive" routerLink="/services/brands">{{'SERVICES.BRANDS.BRAND_BUILDING' | translate}}</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" routerLinkActive routerLinkActive="active" #technology="routerLinkActive" routerLink="/services/technology">{{'SERVICES.TECHNOLOGY.DEVELOPMENT' | translate}}</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" routerLinkActive routerLinkActive="active" #content="routerLinkActive" routerLink="/services/content">{{'SERVICES.CONTENT.CREATION'
+                                |
+                                translate}}</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" routerLinkActive routerLinkActive="active" #design="routerLinkActive" routerLink="/services/design">{{'SERVICES.DESIGN.DESIGN_TITLE' | translate}}</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" routerLinkActive routerLinkActive="active" #media="routerLinkActive" routerLink="/services/media">{{'SERVICES.MEDIA.PRODUCTION' |
+                                translate}}</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" routerLinkActive routerLinkActive="active" #events="routerLinkActive" routerLink="/services/events">{{'SERVICES.EVENT.MANAGEMENT' |
+                                translate}}</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" routerLinkActive routerLinkActive="active" #reporting="routerLinkActive" routerLink="/services/reporting">{{'SERVICES.REPORTING.ANALYSIS' | translate}}</a>
+                        </li> -->
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link wow fadeIn" [routerLink]="['/home', {section: 'team'}]">{{'HEADER.OUR_TEAM' |
+                        translate}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link wow fadeIn" [routerLink]="['/home', {section: 'contact-us'}]">{{'HEADER.CONTACT_US' | translate }}</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>

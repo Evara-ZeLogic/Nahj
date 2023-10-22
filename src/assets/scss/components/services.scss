@@ -1,0 +1,939 @@
+#services {
+    padding: 88px 0;
+    background: #fff;
+    .services {
+        h1 {
+            margin: 8px 0 16px 0;
+            font-size: 48px;
+        }
+        h6 {
+            font-size: 16px;
+        }
+        p {
+            color: #878787;
+            margin-bottom: 88px;
+        }
+    }
+    .services-wrapper-communication {
+        background-color: $primary;
+        padding: 94px 0;
+        #communication {
+            background-image: url("../../images/common/nahj-white.svg");
+            background-color: $primary;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            .col-md-6 {
+                position: relative;
+            }
+            .main-img {
+                width: 440px;
+                height: 260px;
+                position: absolute;
+                top: 85px;
+                right: 54px;
+            }
+            .service-info {
+                padding-top: 20px;
+                h3 {
+                    font-size: 20px;
+                    margin: 24px 0;
+                    font-weight: bold;
+                    color: #fff;
+                }
+                p {
+                    line-height: 25.6px;
+                    color: #fff;
+                    margin-bottom: 24px;
+                }
+                ul {
+                    margin-bottom: 24px;
+                    li {
+                        color: #fff;
+                        span {
+                            font-size: 14px;
+                            color: #fff;
+                        }
+                    }
+                }
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 16px 24px;
+                    width: 133px;
+                    height: 46px;
+                    background: #ffffff;
+                    border-radius: 8px;
+                    border: 0;
+                    color: $primary;
+                    font-weight: bold;
+                    transition: 0.5s all ease-in-out;
+                    &:hover {
+                        transition: 0.5s all ease-in-out;
+                        background: $dark;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    section {
+        overflow: hidden;
+    }
+    .services-wrapper-communication:nth-child(odd) {
+        direction: ltr;
+    }
+    .services-wrapper-communication:nth-child(even) {
+        direction: rtl;
+    }
+    .services-wrapper-communication h3 {
+        font-size: 20px;
+        margin: 24px 0;
+        font-weight: 700;
+    }
+    .services-wrapper-communication button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 24px;
+        width: 133px;
+        height: 46px;
+        background: #ffffff;
+        border-radius: 8px;
+        border: 0;
+        color: #f20732;
+        font-weight: 700;
+        transition: .5s all ease-in-out;
+    }
+    .services-wrapper-communication button:hover {
+        transition: .5s all ease-in-out;
+        background: #101820;
+        color: #fff;
+    }
+    .services-wrapper-communication:nth-child(3n+1) {
+        background: $primary;
+        color: #ffffff;
+    }
+    .services-wrapper-communication:nth-child(3n+2) {
+        background: #101820;
+        color: #ffffff;
+    }
+    .services-wrapper-communication:nth-child(3n+2) button,
+    .services-wrapper-communication:nth-child(3n+3) button {
+        background: $primary;
+        color: #ffffff;
+    }
+    .services-wrapper-communication:nth-child(3n+2) button:hover,
+    .services-wrapper-communication:nth-child(3n+3) button:hover {
+        background: #ffffff;
+        color: $primary;
+    }
+    .services-wrapper-communication:nth-child(3n+3) {
+        background: #ffffff;
+        color: #101820;
+    }
+    .services-wrapper-brand {
+        background-color: $dark;
+        padding: 94px 0;
+        #brand {
+            background-image: url("../../images/common/nahj-red.svg");
+            background-color: $dark;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            .col-md-6 {
+                position: relative;
+            }
+            .main-img {
+                width: 440px;
+                height: 260px;
+                position: absolute;
+                top: 85px;
+                right: 125px;
+            }
+            .service-info {
+                padding-top: 20px;
+                h3 {
+                    font-size: 20px;
+                    margin: 24px 0;
+                    font-weight: bold;
+                    color: #fff;
+                }
+                p {
+                    line-height: 25.6px;
+                    color: #fff;
+                    margin-bottom: 24px;
+                }
+                ul {
+                    margin-bottom: 24px;
+                    li {
+                        color: #fff;
+                        span {
+                            font-size: 14px;
+                            color: #fff;
+                        }
+                    }
+                }
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 16px 24px;
+                    width: 133px;
+                    height: 46px;
+                    background: $primary;
+                    border-radius: 8px;
+                    border: 0;
+                    color: #fff;
+                    font-weight: bold;
+                    transition: 0.5s all ease-in-out;
+                    &:hover {
+                        transition: 0.5s all ease-in-out;
+                        background: #fff;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+    .services-wrapper-technology {
+        background-color: #fff;
+        padding: 94px 0;
+        #technology {
+            background-image: url("../../images/common/nahj-red.svg");
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            .col-md-6 {
+                position: relative;
+            }
+            .main-img {
+                width: 440px;
+                height: 260px;
+                position: absolute;
+                top: 85px;
+                right: 125px;
+            }
+            .service-info {
+                padding-top: 20px;
+                h3 {
+                    font-size: 20px;
+                    margin: 24px 0;
+                    font-weight: bold;
+                    color: $dark;
+                }
+                p {
+                    line-height: 25.6px;
+                    color: $dark;
+                    margin-bottom: 24px;
+                }
+                ul {
+                    margin-bottom: 24px;
+                    li {
+                        color: $dark;
+                        span {
+                            font-size: 14px;
+                            color: $dark;
+                        }
+                    }
+                }
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 16px 24px;
+                    width: 133px;
+                    height: 46px;
+                    background: $primary;
+                    border-radius: 8px;
+                    border: 0;
+                    color: #fff;
+                    font-weight: bold;
+                    transition: 0.5s all ease-in-out;
+                    &:hover {
+                        transition: 0.5s all ease-in-out;
+                        background: #fff;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+    .services-wrapper-content {
+        background-color: $primary;
+        padding: 94px 0;
+        #content {
+            background-image: url("../../images/common/nahj-white.svg");
+            background-color: $primary;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            .col-md-6 {
+                position: relative;
+            }
+            .main-img {
+                width: 440px;
+                height: 260px;
+                position: absolute;
+                top: 85px;
+                right: 54px;
+            }
+            .service-info {
+                padding-top: 20px;
+                h3 {
+                    font-size: 20px;
+                    margin: 24px 0;
+                    font-weight: bold;
+                    color: #fff;
+                }
+                p {
+                    line-height: 25.6px;
+                    color: #fff;
+                    margin-bottom: 24px;
+                }
+                ul {
+                    margin-bottom: 24px;
+                    li {
+                        color: #fff;
+                        span {
+                            font-size: 14px;
+                            color: #fff;
+                        }
+                    }
+                }
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 16px 24px;
+                    width: 133px;
+                    height: 46px;
+                    background: #ffffff;
+                    border-radius: 8px;
+                    border: 0;
+                    color: $primary;
+                    font-weight: bold;
+                    transition: 0.5s all ease-in-out;
+                    &:hover {
+                        transition: 0.5s all ease-in-out;
+                        background: $dark;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .services-wrapper-design {
+        background-color: $dark;
+        padding: 94px 0;
+        #design {
+            background-image: url("../../images/common/nahj-red.svg");
+            background-color: $dark;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            .col-md-6 {
+                position: relative;
+            }
+            .main-img {
+                width: 440px;
+                height: 260px;
+                position: absolute;
+                top: 85px;
+                right: 125px;
+            }
+            .service-info {
+                padding-top: 20px;
+                h3 {
+                    font-size: 20px;
+                    margin: 24px 0;
+                    font-weight: bold;
+                    color: #fff;
+                }
+                p {
+                    line-height: 25.6px;
+                    color: #fff;
+                    margin-bottom: 24px;
+                }
+                ul {
+                    margin-bottom: 24px;
+                    li {
+                        color: #fff;
+                        span {
+                            font-size: 14px;
+                            color: #fff;
+                        }
+                    }
+                }
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 16px 24px;
+                    width: 133px;
+                    height: 46px;
+                    background: $primary;
+                    border-radius: 8px;
+                    border: 0;
+                    color: #fff;
+                    font-weight: bold;
+                    transition: 0.5s all ease-in-out;
+                    &:hover {
+                        transition: 0.5s all ease-in-out;
+                        background: #fff;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+    .services-wrapper-media {
+        background-color: #fff;
+        padding: 94px 0;
+        #media {
+            background-image: url("../../images/common/nahj-red.svg");
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            .col-md-6 {
+                position: relative;
+            }
+            .main-img {
+                width: 440px;
+                height: 260px;
+                position: absolute;
+                top: 85px;
+                right: 125px;
+            }
+            .service-info {
+                padding-top: 20px;
+                h3 {
+                    font-size: 20px;
+                    margin: 24px 0;
+                    font-weight: bold;
+                    color: $dark;
+                }
+                p {
+                    line-height: 25.6px;
+                    color: $dark;
+                    margin-bottom: 24px;
+                }
+                ul {
+                    margin-bottom: 24px;
+                    li {
+                        color: $dark;
+                        span {
+                            font-size: 14px;
+                            color: $dark;
+                        }
+                    }
+                }
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 16px 24px;
+                    width: 133px;
+                    height: 46px;
+                    background: $primary;
+                    border-radius: 8px;
+                    border: 0;
+                    color: #fff;
+                    font-weight: bold;
+                    transition: 0.5s all ease-in-out;
+                    &:hover {
+                        transition: 0.5s all ease-in-out;
+                        background: #fff;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+    .services-wrapper-event {
+        background-color: $primary;
+        padding: 94px 0;
+        #event {
+            background-image: url("../../images/common/nahj-white.svg");
+            background-color: $primary;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            .col-md-6 {
+                position: relative;
+            }
+            .main-img {
+                width: 440px;
+                height: 260px;
+                position: absolute;
+                top: 85px;
+                right: 54px;
+            }
+            .service-info {
+                padding-top: 20px;
+                h3 {
+                    font-size: 20px;
+                    margin: 24px 0;
+                    font-weight: bold;
+                    color: #fff;
+                }
+                p {
+                    line-height: 25.6px;
+                    color: #fff;
+                    margin-bottom: 24px;
+                }
+                ul {
+                    margin-bottom: 24px;
+                    li {
+                        color: #fff;
+                        span {
+                            font-size: 14px;
+                            color: #fff;
+                        }
+                    }
+                }
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 16px 24px;
+                    width: 133px;
+                    height: 46px;
+                    background: #ffffff;
+                    border-radius: 8px;
+                    border: 0;
+                    color: $primary;
+                    font-weight: bold;
+                    transition: 0.5s all ease-in-out;
+                    &:hover {
+                        transition: 0.5s all ease-in-out;
+                        background: $dark;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .services-wrapper-reporting {
+        background-color: $dark;
+        padding: 94px 0;
+        #reporting {
+            background-image: url("../../images/common/nahj-red.svg");
+            background-color: $dark;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            .col-md-6 {
+                position: relative;
+            }
+            .main-img {
+                width: 440px;
+                height: 260px;
+                position: absolute;
+                top: 85px;
+                right: 125px;
+            }
+            .service-info {
+                padding-top: 20px;
+                h3 {
+                    font-size: 20px;
+                    margin: 24px 0;
+                    font-weight: bold;
+                    color: #fff;
+                }
+                p {
+                    line-height: 25.6px;
+                    color: #fff;
+                    margin-bottom: 24px;
+                }
+                ul {
+                    margin-bottom: 24px;
+                    li {
+                        color: #fff;
+                        span {
+                            font-size: 14px;
+                            color: #fff;
+                        }
+                    }
+                }
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 16px 24px;
+                    width: 133px;
+                    height: 46px;
+                    background: $primary;
+                    border-radius: 8px;
+                    border: 0;
+                    color: #fff;
+                    font-weight: bold;
+                    transition: 0.5s all ease-in-out;
+                    &:hover {
+                        transition: 0.5s all ease-in-out;
+                        background: #fff;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #services {
+        .services-wrapper-communication {
+            background-color: $primary;
+            padding: 94px 0;
+            #communication {
+                background-image: none;
+                background-color: $primary;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-brand {
+            background-color: $dark;
+            padding: 94px 0;
+            #brand {
+                background-image: none;
+                background-color: $dark;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-technology {
+            background-color: #fff;
+            padding: 94px 0;
+            #technology {
+                background-image: none;
+                background-color: #fff;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-content {
+            background-color: $primary;
+            padding: 94px 0;
+            #content {
+                background-image: none;
+                background-color: $primary;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-design {
+            background-color: $dark;
+            padding: 94px 0;
+            #design {
+                background-image: none;
+                background-color: $dark;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-media {
+            background-color: #fff;
+            padding: 94px 0;
+            #media {
+                background-image: none;
+                background-color: #fff;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-event {
+            background-color: $primary;
+            padding: 94px 0;
+            #event {
+                background-image: none;
+                background-color: $primary;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-reporting {
+            background-color: $dark;
+            padding: 94px 0;
+            #reporting {
+                background-image: none;
+                background-color: $dark;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    #services {
+        .services-wrapper-communication {
+            background-color: $primary;
+            padding: 94px 0;
+            #communication {
+                background-image: none;
+                background-color: $primary;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-brand {
+            background-color: $dark;
+            padding: 94px 0;
+            #brand {
+                background-image: none;
+                background-color: $dark;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-technology {
+            background-color: #fff;
+            padding: 94px 0;
+            #technology {
+                background-image: none;
+                background-color: #fff;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-content {
+            background-color: $primary;
+            padding: 94px 0;
+            #content {
+                background-image: none;
+                background-color: $primary;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-design {
+            background-color: $dark;
+            padding: 94px 0;
+            #design {
+                background-image: none;
+                background-color: $dark;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-media {
+            background-color: #fff;
+            padding: 94px 0;
+            #media {
+                background-image: none;
+                background-color: #fff;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-event {
+            background-color: $primary;
+            padding: 94px 0;
+            #event {
+                background-image: none;
+                background-color: $primary;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-reporting {
+            background-color: $dark;
+            padding: 94px 0;
+            #reporting {
+                background-image: none;
+                background-color: $dark;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    #services {
+        .services-wrapper-communication {
+            background-color: $primary;
+            padding: 94px 0;
+            #communication {
+                background-image: none;
+                background-color: $primary;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-brand {
+            background-color: $dark;
+            padding: 94px 0;
+            #brand {
+                background-image: none;
+                background-color: $dark;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-technology {
+            background-color: #fff;
+            padding: 94px 0;
+            #technology {
+                background-image: none;
+                background-color: #fff;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-content {
+            background-color: $primary;
+            padding: 94px 0;
+            #content {
+                background-image: none;
+                background-color: $primary;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-design {
+            background-color: $dark;
+            padding: 94px 0;
+            #design {
+                background-image: none;
+                background-color: $dark;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-media {
+            background-color: #fff;
+            padding: 94px 0;
+            #media {
+                background-image: none;
+                background-color: #fff;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-event {
+            background-color: $primary;
+            padding: 94px 0;
+            #event {
+                background-image: none;
+                background-color: $primary;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+        .services-wrapper-reporting {
+            background-color: $dark;
+            padding: 94px 0;
+            #reporting {
+                background-image: none;
+                background-color: $dark;
+                .main-img {
+                    top: unset;
+                    right: unset;
+                    width: 100%;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+#services[lang="ar"] {
+    font-family: "Cairo";
+}

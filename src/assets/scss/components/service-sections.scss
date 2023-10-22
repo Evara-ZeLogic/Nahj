@@ -1,0 +1,52 @@
+#service {
+    overflow: hidden;
+    padding-bottom: 218px;
+    h2 {
+        line-height: 140%;
+        font-size: 32px;
+        margin-top: 80px;
+        margin-bottom: 8px;
+    }
+    p {
+        color: #32383e;
+    }
+    h4 {
+        font-size: 18px;
+        font-weight: 800;
+        color: #000;
+        margin-bottom: 8px;
+        margin-top: 32px;
+        &:first-of-type {
+            margin-top: 48px;
+        }
+    }
+    ul {
+        margin-top: 24px;
+        li {
+            line-height: 220%;
+        }
+    }
+    img {
+        margin-top: 156px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #service {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    #service {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.services-lang[lang="ar"] {
+    font-family: "Cairo";
+}

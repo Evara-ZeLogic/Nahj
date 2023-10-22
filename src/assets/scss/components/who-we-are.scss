@@ -1,0 +1,14 @@
+#who-we-are {
+  background: $dark;
+  .container {
+    padding: 70px 0;
+  }
+  .my-translated-paragraph {
+    white-space: pre-wrap;
+    line-height: 180%;
+  }
+}
+
+#who-we-are[lang="ar"] {
+  font-family: "Cairo";
+}
