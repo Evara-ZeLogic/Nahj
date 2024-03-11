@@ -31,6 +31,15 @@ export class HeaderComponent implements OnInit {
       this.translate.use(localStorage.getItem('lang'));
       this.getCurrentLang.emit(this.lang);
     }
+    window.addEventListener('scroll', (e) => {
+      const navbar: any = document.querySelector('.navbar')
+      if (window.pageYOffset > 50) {
+        navbar.style.top = 0
+      } else {
+        navbar.style.top = '48px'
+      }
+
+    })
   }
   changeLanguage(event: any) {
     switch (event.value) {
@@ -51,7 +60,7 @@ export class HeaderComponent implements OnInit {
 
   getServices(): void {
     this.generalService.getServices(100).subscribe({
-      complete: () => {},
+      complete: () => { },
       error: (err) => {
         console.error(err);
       },
