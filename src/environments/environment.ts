@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  BASE_URL: 'https://api.nahjarabia.com/api/',
+  BASE_URL: 'http://85.208.48.114:8088/api/',
 };
 
 /*
