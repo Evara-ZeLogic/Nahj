@@ -13,7 +13,7 @@ export class TeamComponent implements OnInit {
   constructor(private generalService: GeneralService) {}
 
   customOptions: OwlOptions = {
-    loop: true,
+    // loop: true,
     items: 6,
     autoWidth: true,
     mouseDrag: true,

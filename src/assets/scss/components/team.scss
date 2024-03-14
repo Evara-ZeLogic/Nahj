@@ -122,3 +122,8 @@
 #team[lang="ar"] {
   font-family: "Cairo";
 }
+
+owl-stage > div  {
+  display: flex;
+  justify-content: center;
+}

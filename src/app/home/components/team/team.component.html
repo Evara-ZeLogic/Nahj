@@ -1,18 +1,20 @@
 <section id="team" [lang]="lang" class="wow fadeIn">
-    <h2 class="text-center text-white fw-bold wow fadeInDown">{{'HEADER.OUR_TEAM' | translate}}</h2>
-    <p class="text-white col-md-3 mx-auto text-center wow fadeInDown">{{'TEAM.TITLE' | translate}}</p>
-    <div class="team-members">
-        <owl-carousel-o [options]="customOptions">
-            <ng-template carouselSlide id="1" *ngFor="let employee of team">
-                <div class="card wow fadeIn">
-                    <img [src]="employee.image?.path" alt="team">
-                    <div class="team-info">
-                        <h4>{{ lang == 'ar' ? employee.name?.ar : employee.name?.en }}</h4>
-                        <h6>{{ lang == 'ar' ? employee.job_title?.ar : employee.job_title?.en }}</h6>
-                    </div>
-                </div>
-            </ng-template>
-            <!-- <ng-template carouselSlide
+  <h2 class="text-center text-white fw-bold wow fadeInDown">{{'HEADER.OUR_TEAM' | translate}}</h2>
+  <p class="text-white col-md-3 mx-auto text-center wow fadeInDown">{{'TEAM.TITLE' | translate}}</p>
+  <div class="team-members">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide id="1" *ngFor="let employee of team">
+        <div class="card wow fadeIn">
+          <div class="team-img">
+            <img [src]="employee.image?.path" alt="team">
+          </div>
+          <div class="team-info">
+            <h4>{{ lang == 'ar' ? employee.name?.ar : employee.name?.en }}</h4>
+            <h6>{{ lang == 'ar' ? employee.job_title?.ar : employee.job_title?.en }}</h6>
+          </div>
+        </div>
+      </ng-template>
+      <!-- <ng-template carouselSlide
         id="2">
         <div class="card wow fadeIn">
           <img src="./assets/images/common/team-6.svg"
@@ -166,7 +168,7 @@
           </div>
         </div>
       </ng-template> -->
-        </owl-carousel-o>
-    </div>
+    </owl-carousel-o>
+  </div>
 
 </section>
