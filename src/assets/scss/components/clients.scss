@@ -49,11 +49,18 @@
             overflow: hidden;
             border-radius: .5rem;
 
-            img {
+            .card-img {
                 width: 134px;
-                // height: 134px;
-                transition: all .25s ease-in-out;
-                object-fit: contain;
+                height: 134px;
+                padding: 1rem;
+
+                img {
+                    transition: all .25s ease-in-out;
+                    object-fit: cover;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: .5rem;
+                }
             }
         }
     }
