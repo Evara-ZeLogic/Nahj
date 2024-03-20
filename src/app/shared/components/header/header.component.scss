@@ -1,3 +1,11 @@
 .navbar {
     top: 48px;
 }
+
+.is-active {
+    .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

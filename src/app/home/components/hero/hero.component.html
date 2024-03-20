@@ -1,14 +1,17 @@
-<section id="hero" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'" class="wow fadeIn">
-    <video autoplay muted playsinline loop oncanplay="this.play()" onloadedmetadata="this.muted = true" [src]="sliders[0]?.video" type="video/mp4" class="w-100"></video>
+<section *ngIf="false" id="hero" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'" class="wow fadeIn">
+    <video autoplay muted playsinline loop oncanplay="this.play()" onloadedmetadata="this.muted = true"
+        [src]="sliders[0]?.video" type="video/mp4" class="w-100"></video>
     <img [src]="sliders[1]?.path" class='w-100 hero-img' alt="">
     <div class='hero-content d-flex align-items-center justify-content-between h-100 w-100'>
         <div class="container">
             <div class="hero-text d-flex align-items-center justify-content-between">
                 <div class="wow fadeIn">
-                    <h1 class="fw-bolder text-white col-md-9 wow fadeInDown">{{ lang == 'en' ? sliders[0]?.title?.en : sliders[0]?.title?.ar }}</h1>
+                    <h1 class="fw-bolder text-white col-md-9 wow fadeInDown">{{ lang == 'en' ? sliders[0]?.title?.en :
+                        sliders[0]?.title?.ar }}</h1>
                     <a class="btn-primary btn-with-arrow mt-5 wow fadeInDown" [href]="sliders[0]?.link">
                         <span>{{'HERO.BUTTON' | translate}}</span>
-                        <img src="./assets/images/icons/btn-arrow.svg" alt="arrow" class="m{{lang === 'en' ? 's' : 'e'}}-2">
+                        <img src="./assets/images/icons/btn-arrow.svg" alt="arrow"
+                            class="m{{lang === 'en' ? 's' : 'e'}}-2">
                     </a>
                 </div>
                 <div class="social-links d-flex align-items-center flex-column mt-4 ms-5">
@@ -28,4 +31,140 @@
             </div>
         </div>
     </div>
+</section>
+
+<section *ngIf="false" class="main-promo">
+    <!-- promo-slider start-->
+    <div class="promo-slider">
+        <!-- item start-->
+        <div class="slider-item item--style-1">
+            <div class="overlay"></div>
+            <div class="bg-holder jarallax">
+                <picture>
+                    <source srcset="../../../../assets/images/common/promo-1.jpg" media="(min-width: 992px)" /><img
+                        class="img-bg jarallax-img" src="../../../../assets/images/common/promo-1.jpg" alt="img" />
+                </picture>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 col-md-9">
+                        <div class="align-container">
+                            <div class="align-item">
+                                <div class="promo-slider__wrapper-1">
+                                    <h2 class="title">Business Hand in Hand <span>with new Technology</span>
+                                    </h2>
+                                </div>
+                                <div class="promo-slider__wrapper-2">
+                                    <p class="subtitle">R-energy accreditation standards. Members are
+                                        proactive in both undertaking and applying animal welfare scientific
+                                        research, contribut</p>
+                                </div>
+                                <div class="promo-slider__wrapper-3"><a class="button button--filled" href="#"
+                                        data-hover="Discover"><span>Discover</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- item end-->
+        <!-- item start-->
+        <div class="slider-item item--style-2">
+            <div class="overlay"></div>
+            <div class="bg-holder jarallax">
+                <picture>
+                    <source srcset="../../../../assets/images/common/promo-2.jpg" media="(min-width: 992px)" /><img
+                        class="img-bg jarallax-img" src="../../../../assets/images/common/promo-2.jpg" alt="img" />
+                </picture>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-10 offset-xl-1">
+                        <div class="align-container">
+                            <div class="align-item">
+                                <div class="promo-slider__wrapper-1">
+                                    <h2 class="title">Modern Technology in <span>Sun Energy</span></h2>
+                                </div>
+                                <div class="promo-slider__wrapper-2">
+                                    <p class="subtitle">R-energy accreditation standards. Members are
+                                        proactive in both undertaking and applying animal welfare scientific
+                                        research, contributing </p>
+                                </div>
+                                <div class="promo-slider__wrapper-3"><a class="button button--filled" href="#"
+                                        data-hover="Discover"><span>Discover</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- item end-->
+        <!-- item start-->
+        <div class="slider-item item--style-3">
+            <div class="overlay"></div>
+            <div class="bg-holder jarallax">
+                <picture>
+                    <source srcset="../../../../assets/images/common/promo-3.jpg" media="(min-width: 992px)" /><img
+                        class="img-bg jarallax-img" src="../../../../assets/images/common/promo-3.jpg" alt="img" />
+                </picture>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="align-container">
+                            <div class="align-item">
+                                <div class="promo-slider__wrapper-1">
+                                    <h2 class="title">Solar <span>—</span> Systems</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- item end-->
+    </div>
+    <!-- promo-slider end-->
+    <!-- slider nav start-->
+    <div class="slider-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="inner-block">
+                        <div class="promo-dots"></div><span class="paging-info"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider nav end-->
+    <!-- promo-lower start-->
+    <div class="promo-lower">
+        <div class="promo-contacts">
+            <p class="address">Elliott Ave, Parkville VIC 3052, Melbourne</p>
+            <p class="phone-number">Phone: <a href="tel:+31859644725">+31 85 964 47 25</a></p>
+            <p class="e-main">Email: <a href="mailto:r_energy@mail.co">r_energy@mail.co</a></p>
+        </div>
+        <div class="promo-socials">
+            <!-- socials start-->
+            <nav class="socials-holder">
+                <ul class="socials-primary">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </nav>
+            <!-- socials end -->
+        </div>
+        <div class="video-block">
+            <div class="img-holder"><img class="img-bg" src="../../../../assets/images/common/video-bg.jpg" alt="img" />
+                <div class="overlay"></div><a class="fancy-video" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><i
+                        class="fa fa-play" aria-hidden="aria-hidden"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- promo-lower end-->
 </section>

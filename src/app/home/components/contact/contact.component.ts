@@ -31,7 +31,9 @@ export class ContactComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { 
+    initMap()
+  }
 
   // sendEmail(form) {
   //   emailjs
@@ -63,7 +65,7 @@ export class ContactComponent implements OnInit {
 
   sendEmail() {
     this.generalService.sendMessage(this.contactForm.value).subscribe({
-      complete: () => {},
+      complete: () => { },
       error: (err) => {
         console.error(err);
       },
@@ -77,4 +79,26 @@ export class ContactComponent implements OnInit {
       },
     });
   }
+
+  center: google.maps.LatLngLiteral = { lat: 24, lng: 12 };
+  zoom = 4;
+  display: google.maps.LatLngLiteral;
+
+  moveMap(event: google.maps.MapMouseEvent) {
+    this.center = (event.latLng.toJSON());
+  }
+
+  move(event: google.maps.MapMouseEvent) {
+    this.display = event.latLng.toJSON();
+  }
+}
+
+
+let map: google.maps.Map;
+async function initMap(): Promise<void> {
+  const { Map } = await google.maps.importLibrary("maps") as google.maps.MapsLibrary;
+  map = new Map(document.getElementById("map") as HTMLElement, {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
 }

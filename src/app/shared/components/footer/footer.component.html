@@ -1,9 +1,10 @@
-<footer class="py-5 wow fadeIn" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'">
+<footer *ngIf="false" class="py-5 wow fadeIn" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'">
     <div class="container mt-5">
         <div class="row mx-0 w-100 justify-content-between">
             <div class="col-md px-0">
                 <img src="./assets/images/common/logo-footer.svg" alt="logo">
-                <p class="text-muted my-4 wow fadeIn" [innerHtml]="lang =='en' ? settings.newAboutEn : settings.newAbout"></p>
+                <p class="text-muted my-4 wow fadeIn"
+                    [innerHtml]="lang =='en' ? settings.newAboutEn : settings.newAbout"></p>
                 <ul class="contact-us list-unstyled px-0">
                     <li class="d-flex align-items-center mt-4 wow fadeIn">
                         <img src="./assets/images/icons/phone.svg" alt="">
@@ -51,7 +52,8 @@
                     </li>
                     <li class="d-flex align-items-center mt-3 wow fadeIn">
                         <img src="./assets/images/icons/arrow-right.svg" alt="">
-                        <a class="text-white mx-3" [routerLink]="['/home', {section: 'contact-us'}]">{{'HEADER.CONTACT_US' | translate }}
+                        <a class="text-white mx-3"
+                            [routerLink]="['/home', {section: 'contact-us'}]">{{'HEADER.CONTACT_US' | translate }}
                         </a>
                     </li>
                 </ul>
@@ -88,6 +90,113 @@
                 {{'FOOTER.COMPANY' | translate}} © NAHJ
             </p>
             <p class="text-white wow fadeIn">{{'FOOTER.COPY_RIGHTS' | translate}}</p>
+        </div>
+    </div>
+</footer>
+
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- logo start-->
+                    <div class="footer-logo"><a class="logo" href="index.html">
+                            <svg class="icon">
+                                <use xlink:href="#logo"></use>
+                            </svg><span>R-energy</span></a></div>
+                    <!-- logo end-->
+                    <!-- footer contacts start-->
+                    <div class="footer-contacts">
+                        <p class="address">Elliott Ave, Parkville VIC 3052, <br /> Melbourne Canada</p>
+                        <p class="phone-number">Phone: <a href="tel:+31859644725">+31 85 964 47 25</a></p>
+                        <p class="e-main">Email: <a href="mailto:r_energy@mail.co">r_energy@mail.co</a></p>
+                    </div>
+                    <!-- footer contacts end-->
+                </div>
+                <div class="col-lg-4 offset-lg-0 col-md-7 offset-md-1">
+                    <h4 class="title">Company and Links</h4>
+                    <!-- footer nav start-->
+                    <nav class="footer-nav">
+                        <ul class="footer-menu">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Elements</a></li>
+                            <li><a href="#">Case studios</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <!-- footer nav end-->
+                </div>
+                <div class="col-md-4 d-lg-none">
+                    <!-- socials start-->
+                    <nav class="socials-holder socials-tablet">
+                        <ul class="socials-primary">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </nav>
+                    <!-- socials end -->
+                </div>
+                <div class="col-lg-4 offset-lg-0 col-md-7 offset-md-1">
+                    <!-- footer subscribe start-->
+                    <div class="footer-subscribe">
+                        <h4 class="title">Subscribe</h4>
+                        <form class="subscribe-form" action="javascript:void(0);">
+                            <input class="input-mail" type="email" placeholder="Email" />
+                            <button class="button button--filled" type="submit"
+                                data-hover="Subscribe"><span>Subscribe</span></button>
+                        </form>
+                        <!-- socials start-->
+                        <nav class="socials-holder socials-mobile d-md-none">
+                            <ul class="socials-primary">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </nav>
+                        <!-- socials end -->
+                    </div>
+                    <!-- footer subscribe end-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer-lower">
+                    <div class="row align-items-baseline">
+                        <div class="col-lg-4 col-md-6">
+                            <p class="copyright">© 2019 R-energy Template by Artureanec</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <!-- privacy start-->
+                            <div class="privacy-block"><a href="#">Privacy Policy <span class="separator">|</span>
+                                </a><a href="#">Term and Condision</a></div>
+                            <!-- privacy end-->
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <!-- socials start-->
+                            <nav class="socials-holder socials-desktop">
+                                <ul class="socials-primary">
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </nav>
+                            <!-- socials end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </footer>

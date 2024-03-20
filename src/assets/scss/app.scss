@@ -33,6 +33,7 @@ a {
 
 body {
   font-family: "Roboto";
+  overflow-x: hidden;
 }
 
 .pointer {
@@ -51,21 +52,240 @@ body {
   border-radius: 8px;
   border: 0;
   transition: 0.5s all ease-in-out;
+
   img {
     transition: 0.5s all ease-in-out;
   }
+
   &:hover {
     background: $dark;
     color: #fff;
+
     img {
       transform: translateX(10px);
     }
   }
 }
 
+.button {
+  display: inline-block;
+  color: #f20732;
+  border: 2px solid #f20732;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  text-shadow: 0 0 1px rgba(255, 255, 255, .3);
+  white-space: nowrap
+}
+
+.button:hover {
+  text-decoration: none
+}
+
+.button span {
+  display: block;
+  padding: 21px 56px;
+  background-color: #fff;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s
+}
+
+.button::before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  padding: 21px 56px;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-25%);
+  -ms-transform: translateX(-25%);
+  transform: translateX(-25%);
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s
+}
+
+.button:hover::before {
+  background-color: #f20732;
+  color: #fff;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.button:hover span {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%)
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0
+}
+
+.slick-list:focus {
+  outline: 0
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand
+}
+
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0)
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.slick-track:after,
+.slick-track:before {
+  display: table;
+  content: ''
+}
+
+.slick-track:after {
+  clear: both
+}
+
+.slick-loading .slick-track {
+  visibility: hidden
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px
+}
+
+[dir=rtl] .slick-slide {
+  float: right
+}
+
+.slick-slide img {
+  display: block
+}
+
+.slick-slide.slick-loading img {
+  display: none
+}
+
+.slick-slide.dragging img {
+  pointer-events: none
+}
+
+.slick-initialized .slick-slide {
+  display: block
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent
+}
+
+.slick-arrow.slick-hidden {
+  display: none
+}
+
+.primary-heading {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto 40px auto
+}
+
+@media only screen and (min-width:992px) {
+  .primary-heading {
+    margin: 0 auto 50px auto
+  }
+}
+
+@media only screen and (min-width:992px) {
+  .primary-heading {
+    text-align: center;
+    margin: 0 auto 60px auto
+  }
+}
+
+.primary-heading .title {
+  color: #0d73fc;
+  font-size: 13px;
+  line-height: 27px;
+  font-weight: 500;
+  text-transform: uppercase
+}
+
+.primary-heading .subtitle {
+  color: #333;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: -.030em
+}
+
+@media only screen and (min-width:768px) {
+  .primary-heading .subtitle {
+    font-size: 36px;
+    line-height: 46px
+  }
+}
+
+@media only screen and (min-width:992px) {
+  .primary-heading .subtitle {
+    font-size: 40px;
+    line-height: 50px;
+    margin: 13px 0 0 0
+  }
+}
+
+.primary-heading p {
+  margin-top: 18px
+}
+
 .cairo {
   font-family: "Cairo" !important;
 }
+
 Scroll ::-webkit-scrollbar {
   width: 0.2em;
 }

@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { GeneralService } from 'app/shared/services/general.service';
+import * as $ from 'jquery';
 
+// declare var $: any
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
@@ -13,6 +15,11 @@ export class HeroComponent implements OnInit {
   constructor(private generalService: GeneralService) {}
 
   ngOnInit(): void {
+    // (<any>$('.mySlider')).slick({
+    //   infinite: true,
+    //   slidesToShow: 3,
+    //   slidesToScroll: 3
+    // });
     this.getSliders();
     this.getSettings();
   }

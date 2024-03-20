@@ -1,38 +1,8 @@
-<div #container>
+<div class='main' #container>
   <app-header (getCurrentLang)="selectLang($event)"></app-header>
-  <div id="hero"
-    #hero>
-    <app-hero [lang]="lang"></app-hero>
-  </div>
-  <div class="scroll-down my-5 text-center"
-    [lang]="lang">
-    <p class="text-white">{{'HERO.EXPLORE' | translate}}</p>
-    <button class="wow bounceInDown mx-auto"
-      (click)="scrollDown(about)">
-      <i class="fa-solid fa-chevron-down"></i>
-    </button>
-  </div>
-  <div class="scroll-up my-5 text-center"
-    *ngIf="scrollingUp">
-    <button class="wow bounceInDown mx-auto"
-      (click)="scrollUp()">
-      <i class="fa-solid fa-chevron-up"></i>
-    </button>
-  </div>
-  <div #about
-    id="about">
-    <app-about [lang]="lang"></app-about>
-  </div>
-  <!-- <app-who-we-are [lang]="lang"></app-who-we-are> -->
-  <app-timeline [lang]="lang"></app-timeline>
+  <app-hero [lang]="lang"></app-hero>
   <app-services [lang]="lang"></app-services>
   <app-clients [lang]="lang"></app-clients>
-  <app-reviews [lang]="lang"></app-reviews>
-  <div id="team">
-    <app-team [lang]="lang"></app-team>
-  </div>
-  <div id="contact-us">
-    <app-contact [lang]="lang"></app-contact>
-  </div>
+  <app-contact [lang]="lang"></app-contact>
   <app-footer [lang]="lang"></app-footer>
 </div>

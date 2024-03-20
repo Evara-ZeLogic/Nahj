@@ -11,6 +11,8 @@ import { GeneralService } from 'app/shared/services/general.service';
 export class HeaderComponent implements OnInit {
   settings = {} as any;
   services = [];
+  showMenu: boolean = false;
+  showSubMenu: boolean = false;
   constructor(
     private translate: TranslateService,
     private generalService: GeneralService
@@ -41,18 +43,14 @@ export class HeaderComponent implements OnInit {
 
     })
   }
-  changeLanguage(event: any) {
-    switch (event.value) {
-      case 'en':
-        this.translate.use('en');
-        this.lang = 'en';
-        break;
-      case 'ar':
-        this.translate.use('ar');
-        this.lang = 'ar';
-        break;
-      default:
-        break;
+  changeLanguage(lang: any) {
+    debugger
+    if (lang == 'ar') {
+      this.translate.use('ar');
+      this.lang = 'ar';
+    } else {
+      this.translate.use('en');
+      this.lang = 'en';
     }
     localStorage.setItem('lang', this.lang);
     this.getCurrentLang.emit(this.lang);

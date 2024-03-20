@@ -27,6 +27,8 @@ import { DesignComponent } from './components/services/components/design/design.
 import { MediaComponent } from './components/services/components/media/media.component';
 import { EventComponent } from './components/services/components/event/event.component';
 import { ReportingComponent } from './components/services/components/reporting/reporting.component';
+import { GoogleMap, GoogleMapsModule } from '@angular/google-maps';
+
 registerLocaleData(localeAr);
 registerLocaleData(localeEn);
 @NgModule({
@@ -57,6 +59,7 @@ registerLocaleData(localeEn);
     FormsModule,
     ReactiveFormsModule,
     CarouselModule,
+    GoogleMapsModule,
     TranslateModule.forRoot({
       defaultLanguage: 'en',
       loader: {

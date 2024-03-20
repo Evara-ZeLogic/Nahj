@@ -1,4 +1,4 @@
-<section id="about-us" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'" class="wow fadeIn">
+<!-- <section id="about-us" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'" class="wow fadeIn">
     <div class="container">
         <div class="row mx-0 w-100 justify-content-between">
             <div class="col-md me-lg-5 me-0 about-img-side">
@@ -10,12 +10,56 @@
                 <img src="./assets/images/common/Ellipse 38.svg" alt="Ellipse" class="ellipse-38">
                 <img src="./assets/images/common/Dots.svg" alt="dots" class="dots">
                 <img src="./assets/images/common/about-text.svg" alt="about" class="about-img w-100">
-                <p class="mt-5 text-white wow fadeInDown" [innerHtml]="lang =='en' ? settings.newAboutEn : settings.newAbout"></p>
-                <button class="btn btn-secondary wow fadeInDown d-flex align-items-center justify-content-center mt-5" routerLink="/about">
-          <span class="m{{lang === 'en' ? 'e' : 's'}}-3">{{"HERO.BUTTON" | translate}}</span>
-          <img src="./assets/images/icons/btn-arrow.svg" alt="arrow">
-        </button>
+                <p class="mt-5 text-white wow fadeInDown"
+                    [innerHtml]="lang =='en' ? settings.newAboutEn : settings.newAbout"></p>
+                <button class="btn btn-secondary wow fadeInDown d-flex align-items-center justify-content-center mt-5"
+                    routerLink="/about">
+                    <span class="m{{lang === 'en' ? 'e' : 's'}}-3">{{"HERO.BUTTON" | translate}}</span>
+                    <img src="./assets/images/icons/btn-arrow.svg" alt="arrow">
+                </button>
             </div>
         </div>
     </div>
-</section>
+</section> -->
+
+            <section class="section about no-padding-top no-padding-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-6 col-md-7">
+                            <div class="title-block"><span class="title">About</span>
+                                <h2 class="subtitle">R-energy</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-holder">
+                    <div class="text-holder"><span>About</span></div>
+                    <div class="img-holder jarallax">
+                        <div class="overlay"></div>
+                        <picture>
+                            <source srcset="../../../../assets/images/common/about-bg.jpg" media="(min-width: 992px)" />
+                            <img class="img-bg jarallax-img" src="../../../../assets/images/common/about-bg.jpg" alt="img" />
+                        </picture>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 offset-lg-3">
+                            <!-- item start-->
+                            <div class="about-item">
+                                <svg class="icon">
+                                    <use xlink:href="#logo"></use>
+                                </svg>
+                                <h2 class="title">Introduction of who we are</h2>
+                                <p class="description" >
+                                Streamer fish California halibut Pacific saury. Slickhead grunion lake trout. Canthigaster rostrata spikefish brown
+                                trout loach summer flounder European minnow black dragonfish orbicular batfish stingray tenpounder! Flying characin:
+                                herring, Moses sole sea snail grouper discus. European eel slender snipe eel. Gulper eel dealfish ocean sunfish; rohu
+                                yellow-and-black triplefin Atlantic saury swordfish southern</p>
+                                <a class="button button--transparent" href="#" data-hover="Exlpore more"><span>Exlpore more</span></a>
+                            </div>
+                            <!-- item end-->
+                        </div>
+                    </div>
+                </div>
+            </section>

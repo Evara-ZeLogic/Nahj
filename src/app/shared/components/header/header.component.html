@@ -1,4 +1,4 @@
-<div class="pt-3 bg-primary sticky-top wow fadeIn" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'">
+<div *ngIf="false" class="pt-3 bg-primary sticky-top wow fadeIn" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'">
     <div class="container">
         <div class="d-flex align-items-center justify-content-between">
             <div class="social-links d-flex align-items-center">
@@ -22,56 +22,36 @@
     </div>
 </div>
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary wow fadeIn" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'">
+<nav *ngIf="false" class="navbar fixed-top navbar-expand-lg navbar-light bg-primary wow fadeIn" [lang]="lang"
+    [dir]="lang == 'en' ? 'ltr': 'rtl'">
     <div class="container">
         <a class="navbar-brand pointer py-3" routerLink="/home">
             <img src="./assets/images/common/logo-white.svg" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m{{lang == 'en' ? 's': 'e'}}-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link wow fadeIn" aria-current="page" [routerLink]="['/home']" routerLinkActive="active">{{'HEADER.HOME' | translate}}</a>
+                    <a class="nav-link wow fadeIn" aria-current="page" [routerLink]="['/home']"
+                        routerLinkActive="active">{{'HEADER.HOME' | translate}}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link wow fadeIn" routerLinkActive="active" [routerLink]="['/about']">{{'HEADER.ABOUT'
                         | translate }}</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle wow fadeIn" [ngClass]="{}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle wow fadeIn" [ngClass]="{}" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         {{'HEADER.SERVICES' | translate}}
                         <img src="./assets/images/icons/select-arrow.svg" alt="select">
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li *ngFor="let service of services">
-                            <a class="dropdown-item" [routerLink]="'/services/details/' + service.slug" routerLinkActive="active">{{ lang == 'ar' ? service.title?.ar : service.title?.en }}</a>
+                            <a class="dropdown-item" [routerLink]="'/services/details/' + service.slug"
+                                routerLinkActive="active">{{ lang == 'ar' ? service.title?.ar : service.title?.en }}</a>
                         </li>
-                        <!-- <li>
-                            <a class="dropdown-item" routerLinkActive routerLinkActive="active" #brands="routerLinkActive" routerLink="/services/brands">{{'SERVICES.BRANDS.BRAND_BUILDING' | translate}}</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" routerLinkActive routerLinkActive="active" #technology="routerLinkActive" routerLink="/services/technology">{{'SERVICES.TECHNOLOGY.DEVELOPMENT' | translate}}</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" routerLinkActive routerLinkActive="active" #content="routerLinkActive" routerLink="/services/content">{{'SERVICES.CONTENT.CREATION'
-                                |
-                                translate}}</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" routerLinkActive routerLinkActive="active" #design="routerLinkActive" routerLink="/services/design">{{'SERVICES.DESIGN.DESIGN_TITLE' | translate}}</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" routerLinkActive routerLinkActive="active" #media="routerLinkActive" routerLink="/services/media">{{'SERVICES.MEDIA.PRODUCTION' |
-                                translate}}</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" routerLinkActive routerLinkActive="active" #events="routerLinkActive" routerLink="/services/events">{{'SERVICES.EVENT.MANAGEMENT' |
-                                translate}}</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" routerLinkActive routerLinkActive="active" #reporting="routerLinkActive" routerLink="/services/reporting">{{'SERVICES.REPORTING.ANALYSIS' | translate}}</a>
-                        </li> -->
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -79,10 +59,133 @@
                         translate}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link wow fadeIn" [routerLink]="['/home', {section: 'contact-us'}]">{{'HEADER.CONTACT_US' | translate }}</a>
+                    <a class="nav-link wow fadeIn"
+                        [routerLink]="['/home', {section: 'contact-us'}]">{{'HEADER.CONTACT_US' | translate }}</a>
                 </li>
             </ul>
 
         </div>
     </div>
 </nav>
+
+<div class="mobile-nav {{showMenu ? 'is-active' : ''}}">
+    <div class="nav-inner">
+        <div class="nav-item">
+            <!-- main menu start-->
+            <nav class="menu-holder">
+                <ul class="mobile-menu">
+                    <li class="menu-item">
+                        <a [routerLink]="['/home']" routerLinkActive="active" (click)="showMenu = !showMenu; showSubMenu = false">
+                            <span>{{'HEADER.HOME' | translate }}</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a [routerLink]="['/about']" routerLinkActive="active" (click)="showMenu = !showMenu; showSubMenu = false">
+                            <span>{{'HEADER.ABOUT' | translate }}</span>
+                        </a>
+                    </li>
+                    <li class="menu-item menu-item--has-child">
+                        <a href="javascript:void(0);" (click)="showSubMenu = true"><span>{{'HEADER.SERVICES' | translate}}</span></a>
+                        <ul class="sub-menu {{showSubMenu ? 'd-block' : ''}}">
+                            <li *ngFor="let service of services">
+                                <a [routerLink]="'/services/details/' + service.slug" (click)="showMenu = !showMenu; showSubMenu = false" routerLinkActive="active">
+                                    <span>{{ lang == 'ar' ? service.title?.ar : service.title?.en }}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item">
+                        <a [routerLink]="['/home', {section: 'team'}]" (click)="showMenu = !showMenu; showSubMenu = false">
+                            <span>{{'HEADER.OUR_TEAM' | translate }}</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a [routerLink]="['/home', {section: 'contact-us'}]" (click)="showMenu = !showMenu; showSubMenu = false">
+                            <span>{{'HEADER.CONTACT_US' | translate }}</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- mobile-menu end-->
+<!-- header start-->
+<header class="header header--style-1" id="header" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 column">
+                <!-- logo block start-->
+                <div class="logo-block">
+                    <a class="logo" routerLink="/">
+                        <img src="./assets/images/common/logo-white.svg" alt="">
+                    </a>
+                </div>
+                <!-- logo block end-->
+                <!-- menu block start-->
+                <div class="menu-block">
+                    <!-- main menu start-->
+                    <nav class="menu-holder">
+                        <ul class="main-menu">
+                            <li class="menu-item">
+                                <a [routerLink]="['/home']" routerLinkActive="active">
+                                    <span>{{'HEADER.HOME' | translate }}</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a [routerLink]="['/about']" routerLinkActive="active">
+                                    <span>{{'HEADER.ABOUT' | translate }}</span>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item--has-child">
+                                <a><span>{{'HEADER.SERVICES' | translate}}</span></a>
+                                <ul class="sub-menu">
+                                    <li *ngFor="let service of services">
+                                        <a [routerLink]="'/services/details/' + service.slug" routerLinkActive="active">
+                                            <span>{{ lang == 'ar' ? service.title?.ar : service.title?.en }}</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a [routerLink]="['/home', {section: 'team'}]">
+                                    <span>{{'HEADER.OUR_TEAM' | translate }}</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a [routerLink]="['/home', {section: 'contact-us'}]">
+                                    <span>{{'HEADER.CONTACT_US' | translate }}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- main menu end-->
+                </div>
+                <!-- menu block end-->
+                <!-- lang block start-->
+                <div class="lang-block">
+                    <ul class="lang-select">
+                        <li class="lang-item active">
+                            <span>{{lang == 'ar'? 'AR' : 'EN'}}</span>
+                            <ul class="sub-list">
+                                <li class="lang-item" (click)="changeLanguage('en')"><a>English</a></li>
+                                <li class="lang-item" (click)="changeLanguage('ar')"><a>العربية</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- <a class="button button--transparent" href="#" data-hover="Get In Touch"><span>Get In
+                            Touch</span></a> -->
+                    <!-- menu-trigger start-->
+                    <div class="hamburger" (click)="showMenu = !showMenu; showSubMenu = false">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                    <!-- menu-trigger end-->
+                </div>
+                <!-- lang block end-->
+            </div>
+        </div>
+    </div>
+</header>

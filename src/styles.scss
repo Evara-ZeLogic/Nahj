@@ -1,8 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./assets/css/slick.css";
+@import "./assets/css/styles.min.css";
 
-$theme-colors: ( "primary": #f20732, "secondary": #1aa2da, "dark": #101820, "text-muted": #878787, );
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/bootstrap";
-@import "./assets/scss/app.scss";
+.page-wrapper {
+    width: 100vw;
+    align-items: center;
+}
 
+.container {
+    margin-right: auto;
+}
+
+.map-container {
+    width: 100% !important;
+    height: 90vh !important;
+}

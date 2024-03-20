@@ -1,4 +1,4 @@
-<section id="clients" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'" class="wow fadeIn">
+<section *ngIf="false" id="clients" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'" class="wow fadeIn">
     <div class="container">
         <div class="our-clients text-center">
             <h6 class="text-primary fw-bolder wow fadeInDown">{{'CLIENTS.KNOW' | translate}}</h6>
@@ -16,6 +16,42 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section brands">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- brands slider start-->
+                <div class="brands-holder">
+                    <div class="brands-slider d-flex justify-content-between">
+                        <!-- item start-->
+                        <div class="slider-item"><img src="../../../../assets/images/common/brand-1.png" alt="brand" />
+                        </div>
+                        <!-- item end-->
+                        <!-- item start-->
+                        <div class="slider-item"><img src="../../../../assets/images/common/brand-2.png" alt="brand" />
+                        </div>
+                        <!-- item end-->
+                        <!-- item start-->
+                        <div class="slider-item"><img src="../../../../assets/images/common/brand-3.png" alt="brand" />
+                        </div>
+                        <!-- item end-->
+                        <!-- item start-->
+                        <div class="slider-item"><img src="../../../../assets/images/common/brand-4.png" alt="brand" />
+                        </div>
+                        <!-- item end-->
+                        <!-- item start-->
+                        <div class="slider-item"><img src="../../../../assets/images/common/brand-5.png" alt="brand" />
+                        </div>
+                        <!-- item end-->
+                    </div>
+                    <div class="brands-dots"></div>
+                </div>
+                <!-- brands slider end-->
             </div>
         </div>
     </div>

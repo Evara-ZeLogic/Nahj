@@ -1,4 +1,4 @@
-<section id="services" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'" class="wow fadeIn">
+<section *ngIf="false" id="services" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'" class="wow fadeIn">
     <div class="container">
         <div class="services text-center">
             <h6 class="text-primary fw-bolder wow fadeInDown">{{'HERO.EXPLORE' | translate}} </h6>
@@ -16,4 +16,59 @@
     <app-event></app-event>
     <app-reporting></app-reporting> -->
 
+</section>
+
+<section class="section services-inner" [lang]="lang" [dir]="lang == 'en' ? 'ltr': 'rtl'">
+    <div class="container">
+        <div class="row margin-bottom">
+            <div class="col-lx-7 col-lg-6">
+                <div class="heading primary-heading inner-heading">
+                    <div class="title-holder">
+                        <div class="title-block">
+                            <h3 class="title">Services</h3>
+                            <p class="subtitle">Welcome to Great<br /> R-Energy Services</p>
+                        </div>
+                        <div class="img-block">
+                            <svg class="icon">
+                                <use xlink:href="#logo"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lx-5 col-lg-6">
+                <div class="heading-description">
+                    <p>Streamer fish California halibut Pacific saury. Slickhead grunion lake trout.
+                        Canthigaster rostrata spikefish brown trout loach summer flounder. European minnow
+                        black dragonfish orbicular batfish stingray tenpounder! Flying characin: herring.
+                        Moses</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-holder"><span class="info">Awesome Services for your business and home</span>
+        <div class="container">
+            <div class="row offset-margin">
+                <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4" *ngFor="let service of services">
+                    <!-- item start-->
+                    <div class="info-box">
+                        <div class="info-box__img"><img src="i../../../../assets/images/common/serv-in-bg-1.jpg" alt="service" /></div>
+                        <div class="info-box__category">Sun Energy</div>
+                        <div class="info-box__description">
+                            <div class="info-box__number">01</div>
+                            <div class="info-box__inner">
+                                <h4 class="info-box__title"> <a href="services-details.html">{{ lang == 'ar' ? service.title?.ar : service.title?.en }}</a><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </h4>
+                                <div class="info-box__hidden">
+                                    <p [innerHtml]=" lang == 'ar' ? service.description?.ar.slice(0,400) : service.description?.ar.slice(0,400) "></p>
+                                    <a class="info-box__link with--line" [routerLink]="'/services/details/' + service.slug">Explore more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item end-->
+                </div>
+            </div>
+        </div>
+    </div>
 </section>

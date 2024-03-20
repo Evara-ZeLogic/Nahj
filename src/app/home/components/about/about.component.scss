@@ -1,0 +1,238 @@
+.about {
+    position: relative
+}
+
+.about .container {
+    max-width: 100%;
+    padding: 0;
+    overflow: hidden
+}
+
+@media only screen and (min-width:768px) {
+    .about .container {
+        max-width: 720px;
+        padding: 0 15px
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .about .container {
+        max-width: 960px;
+        padding: 0 15px
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .about .container {
+        max-width: 1170px;
+        padding: 0 15px
+    }
+}
+
+.about .title-block {
+    background: #f20732;
+    padding: 30px
+}
+
+@media only screen and (min-width:768px) {
+    .about .title-block {
+        margin-bottom: 0;
+        width: 100%;
+        max-width: 310px;
+        padding: 40px 50px
+    }
+}
+
+.about .title-block .title {
+    color: #fdfdfd;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 0
+}
+
+.about .title-block .subtitle {
+    color: #fff;
+    margin-bottom: 0
+}
+
+@media only screen and (min-width:768px) {
+    .about .title-block .subtitle {
+        font-size: 40px
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .about .title-block {
+        padding: 50px 70px
+    }
+}
+
+.about .title {
+    letter-spacing: -.050em
+}
+
+.about .bg-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: -1;
+    height: 250px
+}
+
+@media only screen and (min-width:576px) {
+    .about .bg-holder {
+        height: 400px
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .about .bg-holder {
+        height: 640px;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%)
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .about .bg-holder {
+        height: 740px
+    }
+}
+
+.about .bg-holder .text-holder {
+    display: none
+}
+
+@media only screen and (min-width:992px) {
+    .about .bg-holder .text-holder {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 25%
+    }
+}
+
+.about .bg-holder .text-holder span {
+    display: inline-block;
+    color: #f7f7f7;
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 700;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg)
+}
+
+@media only screen and (min-width:1200px) {
+    .about .bg-holder .text-holder span {
+        font-size: 130px;
+        line-height: 130px
+    }
+}
+
+@media only screen and (min-width:1600px) {
+    .about .bg-holder .text-holder span {
+        font-size: 164px;
+        line-height: 164px
+    }
+}
+
+.about .bg-holder .img-holder {
+    width: 100%;
+    position: relative;
+    z-index: -1
+}
+
+@media only screen and (min-width:992px) {
+    .about .bg-holder .img-holder {
+        width: 75%
+    }
+}
+
+.about .bg-holder .img-holder .overlay {
+    z-index: 1
+}
+
+.about-item {
+    position: relative;
+    padding: 40px 30px 40px 30px;
+    background-color: #eff2f5;
+    margin-top: 0
+}
+
+@media only screen and (min-width:576px) {
+    .about-item {
+        padding: 63px 49px 64px 49px
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .about-item {
+        margin-top: 200px
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .about-item {
+        margin-top: 270px
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .about-item {
+        margin-top: 327px
+    }
+}
+
+.about-item .icon {
+    display: none;
+    font-size: 67px;
+    fill: #f20732;
+    position: absolute;
+    top: -33px;
+    left: 25px
+}
+
+.about-item .title {
+    font-size: 30px;
+    margin-bottom: 22px
+}
+
+@media only screen and (min-width:768px) {
+    .about-item .title {
+        font-size: 40px
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .about-item .icon {
+        display: inline-block
+    }
+}
+
+.about-item .button {
+    margin-top: 18px
+}
+
+@media only screen and (min-width:768px) {
+    .about-item p.description {
+        min-height: 150px
+    }
+}
+
+.about-item .button span,
+.about-item .button::before {
+    padding: 13px 40px 13px 40px
+}
+
+.about-item .button span {
+    background: #eff2f5
+}
