@@ -1,10 +1,23 @@
-.service-img {
-    width: 100%;
-    height: 30vh;
-    border-radius: .5rem;
-    overflow: hidden;
+/* Add this SCSS to your existing stylesheet */
 
-    img {
-        object-fit: contain;
+.services-wrapper-communication {
+    display: flex;
+    flex-wrap: wrap;
+
+    
+
+    .service-img {
+        position: relative;
+        width: 100%;
+        height: 50vh; // Adjust the height as needed
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
     }
 }

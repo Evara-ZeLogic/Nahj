@@ -1,6 +1,11 @@
 #hero {
     position: relative;
     height: 100vh;
+    overflow: hidden;
+   
+}
+.slider-item{
+ 
     video {
         filter: grayscale(0.8);
         width: 100vw;
@@ -42,7 +47,6 @@
         }
     }
 }
-
 .scroll-down {
     position: absolute;
     bottom: 1rem;

@@ -33,10 +33,14 @@ export class HeaderComponent implements OnInit {
     }
     window.addEventListener('scroll', (e) => {
       const navbar: any = document.querySelector('.navbar')
-      if (window.pageYOffset > 50) {
-        navbar.style.top = 0
+      const navbarDirection: any = document.querySelector('.language')
+      if (window.pageYOffset > 20) {
+        navbar.style.top = 0;
+        navbarDirection.style.display = 'none';
+
       } else {
-        navbar.style.top = '48px'
+        navbar.style.top = '40px';
+        navbarDirection.style.display = 'block';
       }
 
     })

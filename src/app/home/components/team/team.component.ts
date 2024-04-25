@@ -58,6 +58,8 @@ export class TeamComponent implements OnInit {
       },
       next: (data) => {
         this.team = data['data'];
+        console.log(this.team);
+        
       },
     });
   }

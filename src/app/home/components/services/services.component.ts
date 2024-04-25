@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { GeneralService } from 'app/shared/services/general.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-services',
@@ -8,10 +10,14 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ServicesComponent implements OnInit {
 
   @Input() lang: string;
+  serviceData: any;
+  private serviceSubscription: Subscription;
 
-  constructor() { }
+  constructor( private generalService: GeneralService) { }
 
   ngOnInit(): void {
+   
   }
+
 
 }

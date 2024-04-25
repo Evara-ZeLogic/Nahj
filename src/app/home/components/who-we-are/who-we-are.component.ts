@@ -30,6 +30,7 @@ export class WhoWeAreComponent implements OnInit {
       },
       next: (data) => {
         this.settings = data;
+      
         this.generalService.emitChange(data);
       },
     });

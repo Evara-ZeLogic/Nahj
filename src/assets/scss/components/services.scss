@@ -80,6 +80,7 @@
     }
     section {
         overflow: hidden;
+        width: 100%;
     }
     .services-wrapper-communication:nth-child(odd) {
         direction: ltr;
@@ -132,7 +133,14 @@
     .services-wrapper-communication:nth-child(3n+3) {
         background: #ffffff;
         color: #101820;
+       
     }
+    .services-wrapper-communication:last-child {
+        padding-bottom: 0;
+       
+    }
+
+  
     .services-wrapper-brand {
         background-color: $dark;
         padding: 94px 0;

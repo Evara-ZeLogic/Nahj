@@ -3,20 +3,18 @@
         <div class="our-clients text-center">
             <h6 class="text-primary fw-bolder wow fadeInDown">{{'CLIENTS.KNOW' | translate}}</h6>
             <h1 class="text-dark fw-bolder wow fadeInDown">{{'CLIENTS.CLIENTS' | translate}}</h1>
-            <!-- <p class="col-md-4 mx-auto wow fadeInDown">Lorem Ipsum is simply dummy text of the printing and
-        typesetting industry.
-      </p> -->
         </div>
-        <div class="clients">
-            <div class="row mx-0 w-100 justify-content-center">
-                <div class="col-md-2 d-flex align-items-center" *ngFor="let partner of partners">
-                    <div class="card">
+        <div class="clients w-100 my-4">
+          
+                <div class=" d-flex  gap-4 align-items-center " >
+                    <div class="card" *ngFor="let partner of partners">
                         <div class="card-img">
                             <img [src]="partner.path" alt="clients">
                         </div>
+                       
                     </div>
                 </div>
-            </div>
+           
         </div>
     </div>
 </section>
